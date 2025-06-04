@@ -13,6 +13,24 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Update active link based on current URL
+  useEffect(() => {
+    const currentPath = window.location.pathname;
+    const navLinks = [
+      { name: 'Home', href: '/' },
+      { name: '会社案内', href: '/about' },
+      { name: '事業内容', href: '/services' },
+      { name: 'お問い合わせ', href: '/contact' },
+      { name: '個人情報保護方針', href: '/privacy' },
+      { name: '関連国の情報', href: '/info' }
+    ];
+    
+    const currentLink = navLinks.find(link => link.href === currentPath);
+    if (currentLink) {
+      setActiveLink(currentLink.name);
+    }
+  }, []);
+
   const navLinks = [
     { name: 'Home', href: '/' },
     { name: '会社案内', href: '/about' },
@@ -33,12 +51,16 @@ const Navbar = () => {
     { name: '関連国の情報', href: '/info' }
   ];  
 
+  const handleLinkClick = (linkName) => {
+    setActiveLink(linkName);
+  };
+
   return (
     <>
-      <header className={`fixed top-0 w-full z-50 transition-all duration-500 ${
+      <header className={`fixed top-0 w-full z-[9999] transition-all duration-300 ${
         isScrolled 
-          ? 'bg-white/95 backdrop-blur-lg shadow-xl border-b border-gray-200/50' 
-          : 'bg-gradient-to-b from-white to-gray-50/80'
+          ? 'bg-white shadow-xl border-b border-gray-200/50' 
+          : 'bg-white shadow-lg border-b border-gray-100'
       }`}>
         
         {/* Top Section - Logo & Utilities */}
@@ -95,10 +117,13 @@ const Navbar = () => {
                 </button>
 
                 {/* Contact Button */}
-                <button className="relative px-6 py-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-medium rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group overflow-hidden">
+                <a 
+                  href="/contact"
+                  className="relative px-6 py-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-medium rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group overflow-hidden"
+                >
                   <span className="relative z-10">お問い合わせ</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                </button>
+                </a>
               </div>
 
               {/* Mobile Menu Button */}
@@ -130,7 +155,7 @@ const Navbar = () => {
     <div key={link.name} className="relative group">
       <a
         href={link.href}
-        onClick={() => setActiveLink(link.name)}
+        onClick={() => handleLinkClick(link.name)}
         className={`relative px-6 py-4 text-sm font-medium transition-all duration-300 flex items-center ${
           activeLink === link.name
             ? 'text-white bg-gradient-to-r from-indigo-600 to-purple-600 shadow-lg'
@@ -188,7 +213,7 @@ const Navbar = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                   </svg>
                 </button>
-              </div>
+                </div>
               
               <nav className="space-y-2">
                 {navLinks.map((link) => (
@@ -196,7 +221,7 @@ const Navbar = () => {
                     key={link.name}
                     href={link.href}
                     onClick={() => {
-                      setActiveLink(link.name);
+                      handleLinkClick(link.name);
                       setIsMobileMenuOpen(false);
                     }}
                     className={`block px-4 py-3 rounded-xl font-medium transition-all duration-200 ${
@@ -218,9 +243,13 @@ const Navbar = () => {
                     <button className="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">🇺🇸 EN</button>
                   </div>
                 </div>
-                <button className="w-full px-4 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-medium rounded-xl shadow-lg">
+                <a 
+                  href="/contact"
+                  className="block w-full px-4 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-medium rounded-xl shadow-lg text-center"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
                   お問い合わせ
-                </button>
+                </a>
               </div>
             </div>
           </div>
