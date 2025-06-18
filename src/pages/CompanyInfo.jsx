@@ -1,10 +1,13 @@
 import React from "react";
+import { useTranslation } from 'react-i18next';
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/shared/Footer";
 import InfoTitle from "../components/shared/InfoTitle";
 import BackgroundText from "../components/shared/BackgroundText";
 
 export default function CompanyInfo() {
+  const { t } = useTranslation();
+
   return (
     <>
       <Navbar />
@@ -12,100 +15,90 @@ export default function CompanyInfo() {
       {/* Hero Title Section */}
       <InfoTitle
         backgroundImage="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&h=600&fit=crop&crop=center"
-        title="会社概要"
-        description={`One Step株式会社は、国際人材と日本企業を結ぶ架け橋。\n言語教育と生活サポートを通じて、外国人が安心して働き、暮らせる未来を創ります。`}
-        highlightText="その一歩が、世界を変えるキャリアのはじまりに。"
+        title={t('companyInfo.infoTitle.title')}
+        description={t('companyInfo.infoTitle.description')}
+        highlightText={t('companyInfo.infoTitle.highlightText')}
       />
 
       <div className="relative max-w-4xl mx-auto p-4">
         {/* Background Text for Company Section */}
-        <BackgroundText text="COMPANY" top="top-2" />
+        <BackgroundText text={t('companyInfo.backgroundText')} top="top-2" />
 
         {/* 会社概要 */}
         <h2 className="relative z-10 text-4xl font-bold bg-gradient-to-r from-blue via-blue-100 to-white bg-clip-text mb-4 mt-5">
-          会社概要 <br />
-          <span className="text-xl">Company Profile</span>
+          {t('companyInfo.companyProfile.title')} <br />
+          <span className="text-xl">{t('companyInfo.companyProfile.subtitle')}</span>
         </h2>
 
         <table className="relative z-10 w-full text-left border border-gray-300 mb-10">
           <tbody>
             <tr className="border-b">
-              <th className="p-2 bg-gray-100 w-1/4">会社名</th>
-              <td className="p-2">One Step株式会社（One Step Co., Ltd.）</td>
+              <th className="p-2 bg-gray-100 w-1/4">{t('companyInfo.table.companyName.label')}</th>
+              <td className="p-2">{t('companyInfo.table.companyName.value')}</td>
             </tr>
             <tr className="border-b">
-              <th className="p-2 bg-gray-100">設立</th>
-              <td className="p-2">2024年〇月〇日</td>
+              <th className="p-2 bg-gray-100">{t('companyInfo.table.established.label')}</th>
+              <td className="p-2">{t('companyInfo.table.established.value')}</td>
             </tr>
             <tr className="border-b">
-              <th className="p-2 bg-gray-100">所在地</th>
-              <td className="p-2">〒457-0845　愛知県名古屋市南区観音町観音ビル</td>
+              <th className="p-2 bg-gray-100">{t('companyInfo.table.address.label')}</th>
+              <td className="p-2">{t('companyInfo.table.address.value')}</td>
             </tr>
             <tr className="border-b">
-              <th className="p-2 bg-gray-100">代表者</th>
-              <td className="p-2">代表取締役　レグミ　スディプ</td>
+              <th className="p-2 bg-gray-100">{t('companyInfo.table.representative.label')}</th>
+              <td className="p-2">{t('companyInfo.table.representative.value')}</td>
             </tr>
             <tr className="border-b">
-              <th className="p-2 bg-gray-100">連絡先</th>
-              <td className="p-2">📞 052-829-1674　｜　📧 info@onestep.co.jp</td>
+              <th className="p-2 bg-gray-100">{t('companyInfo.table.contact.label')}</th>
+              <td className="p-2">{t('companyInfo.table.contact.value')}</td>
             </tr>
             <tr className="border-b">
-              <th className="p-2 bg-gray-100">事業内容</th>
+              <th className="p-2 bg-gray-100">{t('companyInfo.table.business.label')}</th>
               <td className="p-2">
                 <ul className="list-disc pl-5 space-y-1">
-                  <li>有料職業紹介事業（許可番号：〇〇-ユ-〇〇〇〇）</li>
-                  <li>外国人向け就職・転職支援</li>
-                  <li>留学生の就職サポート</li>
-                  <li>対応言語：日本語・英語・ネパール語</li>
+                  {t('companyInfo.table.business.items', { returnObjects: true }).map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
                 </ul>
               </td>
             </tr>
             <tr className="border-b">
-              <th className="p-2 bg-gray-100">取引銀行</th>
-              <td className="p-2">三菱UFJ銀行、〇〇信用金庫ほか</td>
+              <th className="p-2 bg-gray-100">{t('companyInfo.table.banks.label')}</th>
+              <td className="p-2">{t('companyInfo.table.banks.value')}</td>
             </tr>
             <tr className="border-b">
-              <th className="p-2 bg-gray-100">許可・登録</th>
-              <td className="p-2">
-                有料職業紹介事業許可（厚生労働大臣 許可番号：〇〇-ユ-〇〇〇〇）｜
-                その他関連業登録準備中
-              </td>
+              <th className="p-2 bg-gray-100">{t('companyInfo.table.licenses.label')}</th>
+              <td className="p-2">{t('companyInfo.table.licenses.value')}</td>
             </tr>
             <tr className="border-b">
-              <th className="p-2 bg-gray-100">ミッション</th>
-              <td className="p-2">
-                「その一歩が、未来を変える」外国人と企業の架け橋となり、日本社会に信頼される人材流通を実現します。
-              </td>
+              <th className="p-2 bg-gray-100">{t('companyInfo.table.mission.label')}</th>
+              <td className="p-2">{t('companyInfo.table.mission.value')}</td>
             </tr>
             <tr className="border-b">
-              <th className="p-2 bg-gray-100">ビジョン</th>
-              <td className="p-2">
-                多様な人材が活躍できる社会を目指し、“人”を中心にした価値創造を追求します。
-              </td>
+              <th className="p-2 bg-gray-100">{t('companyInfo.table.vision.label')}</th>
+              <td className="p-2">{t('companyInfo.table.vision.value')}</td>
             </tr>
             <tr>
-              <th className="p-2 bg-gray-100">ロゴ・スローガン</th>
-              <td className="p-2">
-                ロゴ：※ここにロゴ画像 ｜ スローガン：「その一歩が、未来を変える」
-              </td>
+              <th className="p-2 bg-gray-100">{t('companyInfo.table.logo.label')}</th>
+              <td className="p-2">{t('companyInfo.table.logo.value')}</td>
             </tr>
           </tbody>
         </table>
 
         {/* アクセス */}
         <div className="relative mb-4">
-          <BackgroundText text="ACCESS" top="top-0" />
-          <h2 className="relative z-10 text-xl font-semibold mb-4">アクセス</h2>
+          <BackgroundText text={t('companyInfo.access.backgroundText')} top="top-0" />
+          <h2 className="relative z-10 text-xl font-semibold mb-4">{t('companyInfo.access.title')}</h2>
           <div className="relative z-10">
-            <h3 className="font-semibold">One Step株式会社</h3>
-            <p>〒457-0845 愛知県名古屋市南区観音町観音ビル</p>
-            <p>名鉄常滑線「道徳駅」から徒歩〇分</p>
+            <h3 className="font-semibold">{t('companyInfo.access.companyName')}</h3>
+            <p>{t('companyInfo.access.address')}</p>
+            <p>{t('companyInfo.access.directions')}</p>
           </div>
         </div>
 
         <div className="relative z-10 w-full h-96">
           <iframe
-            title="Google Map"
+            title={t('companyInfo.map.title')}
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3264.248255927196!2d136.90448897594996!3d35.100511361655705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60037bd490091749%3A0x4fa31faf33348089!2z44CSNDU3LTA4NDUgQWljaGksIE5hZ295YSwgTWluYW1pIFdhcmQsIEthbm5vbmNoxY0sIDUtY2jFjW1l4oiSMjUg6Kaz6Z-z44OT44OrIDNj!5e0!3m2!1sen!2sjp!4v1749386315753!5m2!1sen!2sjp"
             width="100%"
             height="100%"

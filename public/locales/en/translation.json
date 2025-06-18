@@ -13,6 +13,111 @@
         "aboutDescription": "We are a 'bridge between people' connecting foreigners who want to work in Japan with reliable companies. Our mission is to support not just matching, but also 'culture,' 'goals,' and 'future.'",
         "scrollIndicator": "Scroll to see details"
     },
+    "ceoGreeting": {
+        "infoTitle": {
+            "title": "CEO Message",
+            "description": "One Step Co., Ltd. is a bridge connecting international talent with Japanese companies.\nThrough language education and life support, we create a future where foreigners can work and live with peace of mind.",
+            "highlightText": "We wholeheartedly support each person's 'one step'."
+        },
+        "backgroundText": "CEO MESSAGE",
+        "ceoInfo": {
+            "altText": "CEO Sudip Regmi",
+            "position": "President & CEO",
+            "name": "Sudip Regmi",
+            "nationality": "🇯🇵 Japanese Nationality (Originally from Nepal)",
+            "languages": "🗣️ Japanese・English・Nepali・Hindi"
+        },
+        "message": {
+            "educationTitle": "🎓【Education & Background】",
+            "educationContent": "Came to Japan from Nepal 14 years ago. Graduated from Aichi Bunkyo University after attending Japanese language school and vocational school.\nThrough work experience at Japanese companies, gained deep understanding of Japanese society, business manners, and culture.\nCurrently holds Japanese nationality and strives to become a 'bridge connecting Japan and foreigners,' supporting both job seekers and companies.",
+            "messageTitle": "💬【CEO Message】",
+            "paragraph1": "As a foreigner who came to Japan, I experienced various difficulties including language barriers, cultural differences, and job searching.\nLearning Japanese, job hunting, and workplace adaptation—none of these were easy paths, but overcoming each challenge has made me who I am today.",
+            "paragraph2": "That's why I believe I can empathize with and support those who are about to work in Japan more than anyone else, understanding their anxieties and expectations.",
+            "paragraph3": "For companies as well, there are various concerns and challenges when hiring foreigners, such as lack of understanding about language, culture, and systems.\nOne Step Co., Ltd.'s mission is to carefully bridge these 'invisible walls' and 'misunderstandings' to realize trustworthy and secure matching.",
+            "paragraph4": "As someone who has already adapted to Japanese society, I provide not just simple job placement, but also meticulous support for new graduates and first-time workers in Japan,\nfocusing on 'post-employment retention' and 'long-term success.'",
+            "closingMessage": "We wholeheartedly support each person's 'precious one step'."
+        }
+    },
+    "companyContact": {
+        "infoTitle": {
+            "title": "Contact Form",
+            "description": "Contact Form for Companies",
+            "highlightText": "For companies seeking reliable business partners"
+        }
+    },
+    "companyInfo": {
+        "infoTitle": {
+            "title": "Company Overview",
+            "description": "One Step Co., Ltd. is a bridge connecting international talent with Japanese companies.\nThrough language education and life support, we create a future where foreigners can work and live with peace of mind.",
+            "highlightText": "That one step becomes the beginning of a world-changing career."
+        },
+        "backgroundText": "COMPANY",
+        "companyProfile": {
+            "title": "Company Overview",
+            "subtitle": "Company Profile"
+        },
+        "table": {
+            "companyName": {
+                "label": "Company Name",
+                "value": "One Step Co., Ltd."
+            },
+            "established": {
+                "label": "Established",
+                "value": "○○, 2024"
+            },
+            "address": {
+                "label": "Address",
+                "value": "〒457-0845 Kannon Building, Kannoncho, Minami Ward, Nagoya City, Aichi Prefecture"
+            },
+            "representative": {
+                "label": "Representative",
+                "value": "President & CEO: Sudip Regmi"
+            },
+            "contact": {
+                "label": "Contact",
+                "value": "📞 052-829-1674 | 📧 info@onestep.co.jp"
+            },
+            "business": {
+                "label": "Business Content",
+                "items": [
+                    "Paid job placement service (License No.: ○○-Yu-○○○○)",
+                    "Employment and career change support for foreigners",
+                    "Job support for international students",
+                    "Supported languages: Japanese, English, Nepali"
+                ]
+            },
+            "banks": {
+                "label": "Partner Banks",
+                "value": "MUFG Bank, ○○ Credit Union, and others"
+            },
+            "licenses": {
+                "label": "Licenses & Registrations",
+                "value": "Paid job placement service license (Ministry of Health, Labour and Welfare License No.: ○○-Yu-○○○○) | Other related business registrations in preparation"
+            },
+            "mission": {
+                "label": "Mission",
+                "value": "'That one step changes the future' - We serve as a bridge between foreigners and companies, realizing trusted human resource distribution in Japanese society."
+            },
+            "vision": {
+                "label": "Vision",
+                "value": "We aim for a society where diverse human resources can thrive, pursuing value creation centered on 'people'."
+            },
+            "logo": {
+                "label": "Logo & Slogan",
+                "value": "Logo: ※Logo image here | Slogan: 'That one step changes the future'"
+            }
+        },
+        "access": {
+            "backgroundText": "ACCESS",
+            "title": "Access",
+            "companyName": "One Step Co., Ltd.",
+            "address": "〒457-0845 Kannon Building, Kannoncho, Minami Ward, Nagoya City, Aichi Prefecture",
+            "directions": "○ minutes walk from Doutoku Station on Meitetsu Tokoname Line"
+        },
+        "map": {
+            "title": "Google Map"
+        }
+    },
     "newsAndNotices": {
         "title": "News & Notices",
         "viewAll": "View All News",
@@ -43,6 +148,73 @@
                 "category": "Important"
             }
         ]
+    },
+    "selectionCard": {
+        "defaultCTA": "Contact us here →",
+        "jobSeekers": {
+            "title": "For Job Seekers",
+            "description": "We support employment and career changes in Japan",
+            "cta": "View Job Information →"
+        },
+        "companies": {
+            "title": "For Companies",
+            "description": "We introduce excellent talent to you",
+            "cta": "Corporate Services →"
+        },
+        "students": {
+            "title": "Student Support",
+            "description": "Support for studying and living in Japan",
+            "cta": "Study Support →"
+        },
+        "translation": {
+            "title": "Translation & Document Support",
+            "description": "Multilingual document creation support",
+            "cta": "Translation Services →"
+        },
+        "importExport": {
+            "title": "Import/Export Support",
+            "description": "Comprehensive international trade support",
+            "cta": "Trade Support →"
+        },
+        "consultation": {
+            "title": "Free Consultation",
+            "description": "Please feel free to consult with us",
+            "cta": "Book Consultation →"
+        }
+    },
+    "companyCTA": {
+        "tagText": "For Companies / 企業様向け",
+        "title": "Please feel free to contact us first",
+        "description": "We will propose the optimal human resource solutions to accelerate your company's business growth. Leave your human resource concerns to One Step.",
+        "buttonText": "Contact & Inquiries →"
+    },
+    "footer": {
+        "company": {
+            "address": "Address",
+            "email": "Email",
+            "phone": "Phone",
+            "website": "Website"
+        },
+        "quickLinks": {
+            "title": "Quick Links",
+            "home": "Home",
+            "about": "About Us",
+            "services": "Services",
+            "contact": "Contact"
+        },
+        "services": {
+            "title": "Our Services",
+            "recruitment": "Recruitment & Staffing Services",
+            "studyAbroad": "Study Abroad Support Programs",
+            "translation": "Multilingual Document Services",
+            "importExport": "International Trade Solutions"
+        },
+        "legal": {
+            "title": "Legal",
+            "privacyProtection": "Privacy Protection Policy",
+            "privacyPolicy": "Privacy Policy"
+        },
+        "copyright": "All Rights Reserved."
     },
     "button": {
         "recruitment": "Recruitment Information",

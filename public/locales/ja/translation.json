@@ -13,6 +13,111 @@
         "aboutDescription": "私たちは、日本で働きたい外国人と、信頼できる企業をつなぐ「人の架け橋」です。ただのマッチングではなく、「文化」「目標」「未来」までも支えることが、私たちのミッションです。",
         "scrollIndicator": "スクロールして詳細を見る"
     },
+    "ceoGreeting": {
+        "infoTitle": {
+            "title": "代表メッセージ",
+            "description": "One Step株式会社は、国際人材と日本企業を結ぶ架け橋。\n言語教育と生活サポートを通じて、外国人が安心して働き、暮らせる未来を創ります。",
+            "highlightText": "一人ひとりの'一歩'を、心から応援します。"
+        },
+        "backgroundText": "CEO MESSAGE",
+        "ceoInfo": {
+            "altText": "CEO Sudip Regmi",
+            "position": "代表取締役",
+            "name": "レグミ・スディプ",
+            "nationality": "🇯🇵 日本国籍（ネパール出身）",
+            "languages": "🗣️ 日本語・英語・ネパール語・ヒンディー語"
+        },
+        "message": {
+            "educationTitle": "🎓【学歴・経歴】",
+            "educationContent": "14年前にネパールより来日。日本語学校・専門学校を経て、愛知文教大学を卒業。\nその後、日本企業での就業経験を通じて、日本社会やビジネスマナー、文化を深く理解。\n現在は日本国籍を取得し、「日本と外国人をつなぐ架け橋」となることを目指し、求職者と企業双方の支援に尽力している。",
+            "messageTitle": "💬【代表メッセージ】",
+            "paragraph1": "私はかつて、外国人として日本に来日し、言語の壁や文化の違い、仕事探しにおけるさまざまな困難を経験してまいりました。\n日本語の習得、就職活動、そして職場での適応——それらすべてが簡単な道のりではありませんでしたが、\nその一つひとつを乗り越えたことで、今の自分があります。",
+            "paragraph2": "だからこそ、これから日本で働こうとする方々の不安や期待に、誰よりも共感し、寄り添うことができると自負しています。",
+            "paragraph3": "また、企業の皆さまにとっても、外国人採用にあたっては言語や文化、制度への理解不足など、\nさまざまな不安や課題があるかと思います。\n私たちOne Step株式会社は、そうした'見えない壁'や'すれ違い'を丁寧に埋め、\n信頼と安心のあるマッチングを実現することを使命としています。",
+            "paragraph4": "すでに日本社会に順応している立場として、私は単なる人材紹介にとどまらず、\n新卒者や初めて日本で働く方々に対しても、\n「就職後の定着」や「長期的な活躍」までを見据えた、きめ細やかな支援を提供してまいります。",
+            "closingMessage": "皆さま一人ひとりの'大切な一歩'を、心を込めて応援いたします。"
+        }
+    },
+    "companyContact": {
+        "infoTitle": {
+            "title": "お問い合わせフォーム",
+            "description": "Contact Form for Companies",
+            "highlightText": "「信頼できるビジネスパートナーをお探しの企業様へ」"
+        }
+    },
+    "companyInfo": {
+        "infoTitle": {
+            "title": "会社概要",
+            "description": "One Step株式会社は、国際人材と日本企業を結ぶ架け橋。\n言語教育と生活サポートを通じて、外国人が安心して働き、暮らせる未来を創ります。",
+            "highlightText": "その一歩が、世界を変えるキャリアのはじまりに。"
+        },
+        "backgroundText": "COMPANY",
+        "companyProfile": {
+            "title": "会社概要",
+            "subtitle": "Company Profile"
+        },
+        "table": {
+            "companyName": {
+                "label": "会社名",
+                "value": "One Step株式会社（One Step Co., Ltd.）"
+            },
+            "established": {
+                "label": "設立",
+                "value": "2024年〇月〇日"
+            },
+            "address": {
+                "label": "所在地",
+                "value": "〒457-0845　愛知県名古屋市南区観音町観音ビル"
+            },
+            "representative": {
+                "label": "代表者",
+                "value": "代表取締役　レグミ　スディプ"
+            },
+            "contact": {
+                "label": "連絡先",
+                "value": "📞 052-829-1674　｜　📧 info@onestep.co.jp"
+            },
+            "business": {
+                "label": "事業内容",
+                "items": [
+                    "有料職業紹介事業（許可番号：〇〇-ユ-〇〇〇〇）",
+                    "外国人向け就職・転職支援",
+                    "留学生の就職サポート",
+                    "対応言語：日本語・英語・ネパール語"
+                ]
+            },
+            "banks": {
+                "label": "取引銀行",
+                "value": "三菱UFJ銀行、〇〇信用金庫ほか"
+            },
+            "licenses": {
+                "label": "許可・登録",
+                "value": "有料職業紹介事業許可（厚生労働大臣 許可番号：〇〇-ユ-〇〇〇〇）｜その他関連業登録準備中"
+            },
+            "mission": {
+                "label": "ミッション",
+                "value": "「その一歩が、未来を変える」外国人と企業の架け橋となり、日本社会に信頼される人材流通を実現します。"
+            },
+            "vision": {
+                "label": "ビジョン",
+                "value": "多様な人材が活躍できる社会を目指し、'人'を中心にした価値創造を追求します。"
+            },
+            "logo": {
+                "label": "ロゴ・スローガン",
+                "value": "ロゴ：※ここにロゴ画像 ｜ スローガン：「その一歩が、未来を変える」"
+            }
+        },
+        "access": {
+            "backgroundText": "ACCESS",
+            "title": "アクセス",
+            "companyName": "One Step株式会社",
+            "address": "〒457-0845 愛知県名古屋市南区観音町観音ビル",
+            "directions": "名鉄常滑線「道徳駅」から徒歩〇分"
+        },
+        "map": {
+            "title": "Google Map"
+        }
+    },
     "newsAndNotices": {
         "title": "お知らせ",
         "viewAll": "すべてのお知らせを見る",
@@ -43,6 +148,39 @@
                 "category": "重要"
             }
         ]
+    },
+    "selectionCard": {
+        "defaultCTA": "こちらからお問い合わせ →",
+        "jobSeekers": {
+            "title": "お仕事をお探しの方",
+            "description": "日本での就職・転職をサポートします",
+            "cta": "求人情報を見る →"
+        },
+        "companies": {
+            "title": "企業様向けサービス",
+            "description": "優秀な人材をご紹介いたします",
+            "cta": "企業様向けサービス →"
+        },
+        "students": {
+            "title": "留学生支援",
+            "description": "日本での学習と生活をサポート",
+            "cta": "留学サポート →"
+        },
+        "translation": {
+            "title": "翻訳・書類サポート",
+            "description": "多言語対応の書類作成支援",
+            "cta": "翻訳サービス →"
+        },
+        "importExport": {
+            "title": "輸出入支援",
+            "description": "国際貿易のトータルサポート",
+            "cta": "貿易サポート →"
+        },
+        "consultation": {
+            "title": "無料相談",
+            "description": "お気軽にご相談ください",
+            "cta": "相談予約 →"
+        }
     },
     "companyCTA": {
         "tagText": "企業様向け / For Companies",
