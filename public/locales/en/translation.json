@@ -418,24 +418,23 @@
                 "content": "We will comply with applicable laws and regulations regarding personal information and strive for continuous improvement and enhancement of our personal information protection initiatives."
             }
         ],
-        "signature": {
-            "company": "One Step Co., Ltd.",
-            "representative": "President & CEO: Sudip Regmi"
-        }
+        "signature": "One Step Co., Ltd. <br />President & CEO: Sudip Regmi"
     },
     "privacyPolicy": {
-        "title": "Privacy Policy",
-        "subtitle": "Personal Information Protection Policy",
         "backgroundText": "PRIVACY",
+        "pageTitle": {
+            "main": "Privacy Policy",
+            "subtitle": "Personal Information Protection Policy"
+        },
         "introduction": "One Step Co., Ltd. recognizes the importance of personal information acquired in the services we provide and establishes the following personal information protection policy to strive for appropriate management and protection.",
-        "sections": [
-            {
+        "sections": {
+            "acquisition": {
                 "title": "1. Acquisition of Personal Information",
                 "content": "We will acquire personal information by appropriate and fair means, clearly stating the purpose of use within the necessary scope."
             },
-            {
+            "purpose": {
                 "title": "2. Purpose of Use of Personal Information",
-                "content": "We will use the acquired personal information for the following purposes:",
+                "intro": "We will use the acquired personal information for the following purposes:",
                 "items": [
                     "Provision of paid job placement services",
                     "Contact with applicants, interviews, and job introduction related work",
@@ -444,38 +443,36 @@
                     "Response based on laws and regulations"
                 ]
             },
-            {
+            "thirdParty": {
                 "title": "3. Provision of Personal Information to Third Parties",
-                "content": "We will not provide acquired personal information to third parties except in the following cases:",
+                "intro": "We will not provide acquired personal information to third parties except in the following cases:",
                 "items": [
                     "When there is consent from the individual",
                     "When based on laws and regulations",
                     "When necessary for the protection of human life, body, or property"
                 ]
             },
-            {
+            "management": {
                 "title": "4. Management of Personal Information",
                 "content": "We will implement necessary and appropriate safety management measures to prevent leakage, loss, alteration, and unauthorized access of personal information."
             },
-            {
+            "disclosure": {
                 "title": "5. Disclosure, Correction, Deletion, etc. of Personal Information",
                 "content": "When there are requests from individuals for disclosure, correction, addition, deletion, or suspension of use of their personal information, we will respond appropriately."
             },
-            {
+            "compliance": {
                 "title": "6. Legal Compliance and Review",
                 "content": "We will comply with laws and other norms regarding personal information protection and strive to review and improve the content of this policy as appropriate."
             },
-            {
+            "contact": {
                 "title": "7. Contact Window",
-                "content": "For inquiries regarding the handling of personal information, please contact us below:",
-                "contactInfo": {
-                    "company": "One Step Co., Ltd.",
-                    "address": "Address: 〒457-0828 5-25 Kannoncho, Minami Ward, Nagoya City, Aichi Prefecture, Kannon Building 3c",
-                    "phone": "Phone: 052-829-1674",
-                    "email": "Email: info@onestep.co.jp"
-                }
+                "intro": "For inquiries regarding the handling of personal information, please contact us below:",
+                "companyName": "One Step Co., Ltd.",
+                "address": "Address: 〒457-0828 5-25 Kannoncho, Minami Ward, Nagoya City, Aichi Prefecture, Kannon Building 3c",
+                "phone": "Phone: 052-829-1674",
+                "email": "Email: info@onestep.co.jp"
             }
-        ]
+        }
     },
     "recruitmentPage": {
         "infoTitle": {
@@ -483,7 +480,7 @@
             "description": "RECRUITMENT",
             "highlightText": "Would you like to create the future with us?"
         },
-        "qualitiesSection": {
+        "strengths": {
             "title": "Qualities We Seek",
             "items": [
                 {
@@ -500,12 +497,27 @@
                 }
             ]
         },
-        "jobDetails": {
+        "jobListings": {
             "title": "Job Requirements",
-            "position": "Career Consultant (Human Resource Coordinator)",
-            "responsibilities": "Career counseling with job seekers, job introductions, talent proposals to companies, interview preparation, post-employment follow-up, etc.",
-            "salary": "Monthly salary: 250,000 yen ~ 400,000 yen (determined based on experience and ability)",
-            "location": "5-25 Kannoncho, Minami Ward, Nagoya City, Aichi Prefecture, Kannon Building 3c"
+            "backgroundText": "Recruitment",
+            "table": {
+                "position": {
+                    "label": "Position",
+                    "value": "Career Consultant (Human Resource Coordinator)"
+                },
+                "jobDescription": {
+                    "label": "Job Description",
+                    "value": "Career counseling with job seekers, job introductions, talent proposals to companies, interview preparation, post-employment follow-up, etc."
+                },
+                "salary": {
+                    "label": "Salary",
+                    "value": "Monthly salary: 250,000 yen ~ 400,000 yen (determined based on experience and ability)"
+                },
+                "location": {
+                    "label": "Location",
+                    "value": "5-25 Kannoncho, Minami Ward, Nagoya City, Aichi Prefecture, Kannon Building 3c"
+                }
+            }
         },
         "selectionFlow": {
             "title": "Selection Process",
@@ -524,6 +536,9 @@
         },
         "employeeInterview": {
             "title": "Employee Interview",
+            "employee": {
+                "altText": "Employee Tanaka Saori"
+            },
             "questions": [
                 {
                     "question": "Q. What is rewarding about this job?",
@@ -535,7 +550,7 @@
                 }
             ]
         },
-        "accessSection": {
+        "contactInfo": {
             "title": "Access & Contact",
             "contact": {
                 "title": "Contact",
@@ -544,17 +559,90 @@
             },
             "access": {
                 "title": "Access",
-                "address": "5-25 Kannoncho, Minami Ward, Nagoya City, Aichi Prefecture, Kannon Building 3c",
-                "directions": "※5 minutes walk from Sakurahonmachi Station on Subway Sakura-dori Line"
+                "content": "5-25 Kannoncho, Minami Ward, Nagoya City, Aichi Prefecture, Kannon Building 3c<br /><span class=\"text-sm text-gray-500\">※5 minutes walk from Sakurahonmachi Station on Subway Sakura-dori Line</span>"
             }
         },
         "cta": {
             "tagText": "For Those Considering Application / ご応募を検討されている方へ",
             "title": "A new step starts here.",
             "description": "Would you like to expand your possibilities together with us?",
-            "buttonText": "Go to Application Form",
-            "buttonLink": "https://docs.google.com/forms/d/e/1FAIpQLSdh6uGf2hrGfCRTZUuTFYR6abVvsrEHH77TrBDEsXg2IPDSLA/viewform"
+            "buttonText": "Go to Application Form"
         }
+    },
+    "servicePage": {
+        "helmet": {
+            "title": "Staffing & Dispatch Services | One Step Co., Ltd.",
+            "description": "One Step Co., Ltd. leverages our multinational talent network to quickly provide optimal human resources to companies. We have strengths in utilizing foreign staff and support Japanese companies as a trusted human resource partner.",
+            "keywords": "staffing services, dispatch services, foreign talent, human resources, corporate recruitment support, foreigners with understanding of Japanese culture, global talent, short-term staff, technical talent, temporary employees"
+        },
+        "infoTitle": {
+            "title": "Staffing & Dispatch Services",
+            "description": "Staffing & Dispatch Services",
+            "highlightText": "Supporting corporate growth through the power of human resources"
+        },
+        "whatIsStaffing": {
+            "imageAlt": "Business meeting",
+            "titleHighlight": "Staffing Services",
+            "titleSuffix": " - What is it?",
+            "description": "Staffing services involve dispatching staff employed by our company (One Step) to your company, where they work under your direction and command. This service allows you to reduce the costs and efforts of recruitment activities and labor management while quickly securing personnel with the necessary skills when needed. We flexibly respond to your company's needs, from short-term tasks to long-term projects."
+        },
+        "strengths": {
+            "items": [
+                {
+                    "title": "Diverse Talent Network",
+                    "description": "Leveraging our rich talent network regardless of nationality, we quickly propose the most suitable personnel for your company's needs."
+                },
+                {
+                    "title": "Global Standard Support",
+                    "description": "Many foreign staff members are well-versed in Japanese culture and business manners. Cross-cultural communication is also smooth."
+                },
+                {
+                    "title": "Flexible Solutions",
+                    "description": "We provide flexible plans tailored to recruitment challenges, from short-term dispatch to temp-to-perm arrangements and securing specialized professionals."
+                }
+            ]
+        },
+        "flow": {
+            "title": "Process to Start Using Our Services",
+            "steps": [
+                "Inquiry",
+                "Consultation & Proposal",
+                "Contract & Personnel Selection",
+                "Work Commencement"
+            ],
+            "descriptions": [
+                "Please feel free to contact us via web form or phone.",
+                "Our staff will listen to your work requirements and needs, and propose the optimal plan.",
+                "After contract signing, we select staff with matching skills and conditions from our rich talent pool.",
+                "Even after work begins, our company provides solid support to staff. You can use our services with confidence."
+            ]
+        },
+        "challengesSection": {
+            "titlePrefix": "We can address these ",
+            "titleHighlight": "challenges",
+            "titleSuffix": ""
+        },
+        "challenges": [
+            "Responding to sudden staff shortages",
+            "Securing short-term staff for busy periods only",
+            "Utilizing personnel with specialized skills",
+            "Reducing recruitment and labor costs",
+            "Securing replacement staff for maternity/paternity leave"
+        ],
+        "jobTypesSection": {
+            "titlePrefix": "Supported ",
+            "titleHighlight": "Industries & Job Types",
+            "titleSuffix": " Examples",
+            "imageAlt": "Diverse workplaces"
+        },
+        "jobTypes": [
+            "Manufacturing & Logistics",
+            "Administrative & Customer Service",
+            "IT & Engineering",
+            "Sales & Customer Service",
+            "Interpretation & Translation",
+            "Care & Medical"
+        ]
     },
     "studentPage": {
         "infoTitle": {
@@ -565,8 +653,7 @@
         "supportSection": {
             "imageAlt": "Worried international student",
             "titlePrefix": "Are you worried about ",
-            "titleHighlight": "finding a job in Japan",
-            "titleSuffix": " alone?",
+            "titleHighlight": "finding a job in Japan ?",
             "concerns": [
                 "\"I don't know how to write a Japanese resume\"",
                 "\"I'm anxious about what to say in interviews\"",
@@ -628,114 +715,114 @@
             "title": "We support your first step toward the future",
             "description": "Please feel free to consult with us anytime about career development in Japan. Professional consultants will help you with sincere support.",
             "buttonText": "Apply for Free Consultation →"
+        }
+    },
+    "teamsPage": {
+        "infoTitle": {
+            "title": "Our Team",
+            "description": "Meet Our Team",
+            "highlightText": "We are a team composed of foreign members, but we have lived in Japan for many years and deeply understand and respect Japanese culture and values through daily life and work. Some members have even acquired Japanese nationality, and we value contribution to and harmony with Japanese society. One Step Co., Ltd. is not simply a 'company by foreigners,' but wants to be a trusted presence for Japanese companies as a 'partner that understands Japan and grows together with Japan.'"
         },
-        "teamsPage": {
-            "infoTitle": {
-                "title": "Our Team",
-                "description": "Meet Our Team",
-                "highlightText": "We are a team composed of foreign members, but we have lived in Japan for many years and deeply understand and respect Japanese culture and values through daily life and work. Some members have even acquired Japanese nationality, and we value contribution to and harmony with Japanese society. One Step Co., Ltd. is not simply a 'company by foreigners,' but wants to be a trusted presence for Japanese companies as a 'partner that understands Japan and grows together with Japan.'"
+        "members": [
+            {
+                "nameJp": "Rishi Baral",
+                "nameEn": "Rishi Baral",
+                "titleJp": "Co-founder & Global Collaboration Director",
+                "aboutJp": "I am from Nepal and currently enrolled in a doctoral program at Hokkaido University in Japan, conducting research on wildlife conservation and carnivore ecology. For over 10 years, I have been engaged in field research, international collaborative research, and academic exchange, and I apply the global perspective gained from these experiences to human resource development and cross-cultural collaboration. As Co-founder & Global Collaboration Director of One Step Co., Ltd., I serve as a bridge between excellent overseas talent and reliable domestic companies in Japan. Our mission is not simply to introduce human resources, but to build 'connections of trust and growth' that transcend borders and cultures."
             },
-            "members": [
+            {
+                "nameJp": "Sailendra Ranabhat",
+                "nameEn": "Sailendra Ranabhat",
+                "titleJp": "Director",
+                "aboutJp": "I came to Japan 14 years ago and graduated from Aichi Bunkyo University after attending Japanese language school and vocational school. After that, I got a job at a company and through deep contact with Japanese society and culture, my attachment to Japan grew stronger, and I eventually acquired Japanese nationality. Since 2023, I started my own business, and through my experience in corporate employment and entrepreneurship, I felt firsthand the challenges of 'labor shortage' and 'difficulty for foreigners to find jobs.' With the desire to become a 'bridge' for such challenges, I established 'One Step Co., Ltd.' I speak four languages: Japanese, Nepali, English, and Hindi, providing global support that connects diverse talent with companies."
+            }
+        ]
+    },
+    "translationServicePage": {
+        "infoTitle": {
+            "title": "Translation & Documentation Services",
+            "description": "Translation & Documentation Services",
+            "highlightText": "Beyond language barriers, taking business to the world."
+        },
+        "problemSection": {
+            "imageAlt": "Global business",
+            "titlePrefix": "Do you have these ",
+            "titleHighlight": "translation challenges",
+            "titleSuffix": "?",
+            "challenges": [
+                "Machine translation quality is low and cannot be used for business.",
+                "There are many technical terms, and we cannot find a company that can provide accurate translation.",
+                "We want to expand to multiple languages, but we don't have the time or resources."
+            ],
+            "solution": "One Step is a professional translation partner that accelerates your company's global expansion."
+        },
+        "strengths": {
+            "items": [
                 {
-                    "nameJp": "Rishi Baral",
-                    "nameEn": "Rishi Baral",
-                    "titleJp": "Co-founder & Global Collaboration Director",
-                    "aboutJp": "I am from Nepal and currently enrolled in a doctoral program at Hokkaido University in Japan, conducting research on wildlife conservation and carnivore ecology. For over 10 years, I have been engaged in field research, international collaborative research, and academic exchange, and I apply the global perspective gained from these experiences to human resource development and cross-cultural collaboration. As Co-founder & Global Collaboration Director of One Step Co., Ltd., I serve as a bridge between excellent overseas talent and reliable domestic companies in Japan. Our mission is not simply to introduce human resources, but to build 'connections of trust and growth' that transcend borders and cultures."
+                    "title": "Specialized Fields x Native Quality",
+                    "description": "Translators with specialized knowledge in each field team up with native speakers to achieve accurate and natural translations."
                 },
                 {
-                    "nameJp": "Sailendra Ranabhat",
-                    "nameEn": "Sailendra Ranabhat",
-                    "titleJp": "Director",
-                    "aboutJp": "I came to Japan 14 years ago and graduated from Aichi Bunkyo University after attending Japanese language school and vocational school. After that, I got a job at a company and through deep contact with Japanese society and culture, my attachment to Japan grew stronger, and I eventually acquired Japanese nationality. Since 2023, I started my own business, and through my experience in corporate employment and entrepreneurship, I felt firsthand the challenges of 'labor shortage' and 'difficulty for foreigners to find jobs.' With the desire to become a 'bridge' for such challenges, I established 'One Step Co., Ltd.' I speak four languages: Japanese, Nepali, English, and Hindi, providing global support that connects diverse talent with companies."
+                    "title": "Quick & Flexible Response",
+                    "description": "We respond flexibly to urgent projects. Speedy delivery according to your business schedule is possible."
+                },
+                {
+                    "title": "Various Document Formats",
+                    "description": "We handle all types of documents from contracts and technical manuals to websites and marketing materials."
+                },
+                {
+                    "title": "Thorough Confidentiality",
+                    "description": "Information entrusted by customers is managed with the highest level of security. Non-disclosure agreements (NDA) can also be concluded."
                 }
             ]
         },
-        "translationServicePage": {
-            "infoTitle": {
-                "title": "Translation & Documentation Services",
-                "description": "Translation & Documentation Services",
-                "highlightText": "Beyond language barriers, taking business to the world."
-            },
-            "problemSection": {
-                "imageAlt": "Global business",
-                "titlePrefix": "Do you have these ",
-                "titleHighlight": "translation challenges",
-                "titleSuffix": "?",
-                "challenges": [
-                    "Machine translation quality is low and cannot be used for business.",
-                    "There are many technical terms, and we cannot find a company that can provide accurate translation.",
-                    "We want to expand to multiple languages, but we don't have the time or resources."
-                ],
-                "solution": "One Step is a professional translation partner that accelerates your company's global expansion."
-            },
-            "strengths": {
-                "items": [
-                    {
-                        "title": "Specialized Fields x Native Quality",
-                        "description": "Translators with specialized knowledge in each field team up with native speakers to achieve accurate and natural translations."
-                    },
-                    {
-                        "title": "Quick & Flexible Response",
-                        "description": "We respond flexibly to urgent projects. Speedy delivery according to your business schedule is possible."
-                    },
-                    {
-                        "title": "Various Document Formats",
-                        "description": "We handle all types of documents from contracts and technical manuals to websites and marketing materials."
-                    },
-                    {
-                        "title": "Thorough Confidentiality",
-                        "description": "Information entrusted by customers is managed with the highest level of security. Non-disclosure agreements (NDA) can also be concluded."
-                    }
-                ]
-            },
-            "flow": {
-                "title": "Service Flow",
-                "steps": [
-                    "Inquiry & Quote",
-                    "Order & Document Receipt",
-                    "Translation, Proofreading & Check",
-                    "Delivery"
-                ],
-                "descriptions": [
-                    "Please contact us via web form. We will provide a quote within the same day at the earliest.",
-                    "After formal order, please send us the documents or materials to be translated.",
-                    "Professional translators translate, and separate native staff strictly check the quality.",
-                    "We deliver translation data in your specified format. After-sales follow-up is also complete."
-                ]
-            },
-            "supportedFieldsSection": {
-                "titlePrefix": "Supported ",
-                "titleHighlight": "Fields"
-            },
-            "supportedFields": [
-                "IT & Technology",
-                "Legal & Contracts",
-                "Medical & Pharmaceutical",
-                "Finance & IR",
-                "Marketing",
-                "Technical Manuals",
-                "Websites"
+        "flow": {
+            "title": "Service Flow",
+            "steps": [
+                "Inquiry & Quote",
+                "Order & Document Receipt",
+                "Translation, Proofreading & Check",
+                "Delivery"
             ],
-            "supportedLanguagesSection": {
-                "titlePrefix": "Supported ",
-                "titleHighlight": "Languages",
-                "imageAlt": "Multilingual support"
-            },
-            "supportedLanguages": [
-                "English",
-                "Chinese (Simplified/Traditional)",
-                "Korean",
-                "Spanish",
-                "German",
-                "French",
-                "Vietnamese",
-                "Many others"
-            ],
-            "cta": {
-                "title": "Free Quote & Consultation Here",
-                "description": "Please let us know the overview of documents you want to translate, languages, delivery date, etc.\nProfessional coordinators will propose the optimal plan.",
-                "buttonText": "Request Free Quote"
-            }
+            "descriptions": [
+                "Please contact us via web form. We will provide a quote within the same day at the earliest.",
+                "After formal order, please send us the documents or materials to be translated.",
+                "Professional translators translate, and separate native staff strictly check the quality.",
+                "We deliver translation data in your specified format. After-sales follow-up is also complete."
+            ]
+        },
+        "supportedFieldsSection": {
+            "titlePrefix": "Supported ",
+            "titleHighlight": "Fields"
+        },
+        "supportedFields": [
+            "IT & Technology",
+            "Legal & Contracts",
+            "Medical & Pharmaceutical",
+            "Finance & IR",
+            "Marketing",
+            "Technical Manuals",
+            "Websites"
+        ],
+        "supportedLanguagesSection": {
+            "titlePrefix": "Supported ",
+            "titleHighlight": "Languages",
+            "imageAlt": "Multilingual support"
+        },
+        "supportedLanguages": [
+            "English",
+            "Chinese (Simplified/Traditional)",
+            "Korean",
+            "Spanish",
+            "German",
+            "French",
+            "Vietnamese",
+            "Many others"
+        ],
+        "cta": {
+            "title": "Free Quote & Consultation Here",
+            "description": "Please let us know the overview of documents you want to translate, languages, delivery date, etc.\nProfessional coordinators will propose the optimal plan.",
+            "buttonText": "Request Free Quote"
         }
     }
 }

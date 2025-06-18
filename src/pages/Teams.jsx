@@ -10,22 +10,25 @@ import Member2 from '../image/sailendra.png';
 const Teams = () => {
   const { t } = useTranslation();
 
+  // Get the members array from translations
+  const membersData = t('teamsPage.members', { returnObjects: true });
+
   const teamMembers = [
     {
       id: 1,
       image: RishiImage,
-      nameJp: t('teamsPage.members.0.nameJp'),
-      nameEn: t('teamsPage.members.0.nameEn'),
-      titleJp: t('teamsPage.members.0.titleJp'),
-      aboutJp: t('teamsPage.members.0.aboutJp')
+      nameJp: membersData[0]?.nameJp || 'Rishi Baral',
+      nameEn: membersData[0]?.nameEn || 'Rishi Baral',
+      titleJp: membersData[0]?.titleJp || 'Co-founder & Global Collaboration Director',
+      aboutJp: membersData[0]?.aboutJp || 'Default about text'
     },
     {
       id: 2,
       image: Member2,
-      nameJp: t('teamsPage.members.1.nameJp'),
-      nameEn: t('teamsPage.members.1.nameEn'),
-      titleJp: t('teamsPage.members.1.titleJp'),
-      aboutJp: t('teamsPage.members.1.aboutJp')
+      nameJp: membersData[1]?.nameJp || 'Sailendra Ranabhat',
+      nameEn: membersData[1]?.nameEn || 'Sailendra Ranabhat',
+      titleJp: membersData[1]?.titleJp || 'Director',
+      aboutJp: membersData[1]?.aboutJp || 'Default about text'
     }
   ];
 
