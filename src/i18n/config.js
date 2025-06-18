@@ -9,14 +9,16 @@ i18n
     .use(LanguageDetector)
     .use(initReactI18next)
     .init({
-        lng: 'ja', // default language
-        fallbackLng: 'en',
-        debug: true,
+        // Remove lng: 'ja' - let the detector handle it
+        fallbackLng: 'ja', // Changed from 'en' to 'ja' since that's your default
+        debug: true, // Enable for debugging
 
-        // Detection options
+        // Detection options - this is the key part for persistence
         detection: {
             order: ['localStorage', 'navigator', 'htmlTag'],
+            lookupLocalStorage: 'i18nextLng',
             caches: ['localStorage'],
+            excludeCacheFor: ['cimode'],
         },
 
         interpolation: {
@@ -27,12 +29,16 @@ i18n
             loadPath: '/locales/{{lng}}/translation.json',
         },
 
-        // Available languages
+        // Use supportedLngs instead of whitelist (whitelist is deprecated)
         supportedLngs: ['en', 'ja'],
-
+        
         react: {
             useSuspense: false,
         },
+
+        // Add these for better language handling
+        load: 'languageOnly',
+        cleanCode: true,
     });
 
 export default i18n;
