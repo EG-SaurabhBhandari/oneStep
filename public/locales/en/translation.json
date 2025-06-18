@@ -44,6 +44,18 @@
             }
         ]
     },
+    "button": {
+        "recruitment": "Recruitment Information",
+        "jobSeekers": "For Job Seekers",
+        "companies": "For Companies",
+        "contactUs": "Contact Us",
+        "learnMore": "Learn More",
+        "applyNow": "Apply Now",
+        "getStarted": "Get Started",
+        "viewServices": "View Services",
+        "downloadBrochure": "Download Brochure",
+        "scheduleConsultation": "Schedule Consultation"
+    },
     "whatWeDo": {
         "title": "Our Services",
         "subtitle": "What We Do",

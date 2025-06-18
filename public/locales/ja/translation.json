@@ -44,6 +44,18 @@
             }
         ]
     },
+    "button": {
+        "recruitment": "採用情報",
+        "jobSeekers": "お仕事をお探しの方",
+        "companies": "企業様向けサービス",
+        "contactUs": "お問い合わせ",
+        "learnMore": "詳しく見る",
+        "applyNow": "今すぐ応募",
+        "getStarted": "始める",
+        "viewServices": "サービスを見る",
+        "downloadBrochure": "パンフレットダウンロード",
+        "scheduleConsultation": "相談予約"
+    },
     "whatWeDo": {
         "title": "事業内容",
         "subtitle": "What We Do",
