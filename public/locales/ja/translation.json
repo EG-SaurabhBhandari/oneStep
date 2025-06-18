@@ -44,6 +44,40 @@
             }
         ]
     },
+    "companyCTA": {
+        "tagText": "企業様向け / For Companies",
+        "title": "まずはお気軽にご相談ください",
+        "description": "貴社の事業成長を加速させる最適な人材ソリューションをご提案いたします。人材に関するお悩みは、One Stepにお任せください。",
+        "buttonText": "ご相談・お問い合わせはこちら →"
+    },
+    "footer": {
+        "company": {
+            "address": "住所",
+            "email": "メール",
+            "phone": "電話",
+            "website": "ウェブサイト"
+        },
+        "quickLinks": {
+            "title": "クイックリンク",
+            "home": "ホーム",
+            "about": "会社案内",
+            "services": "事業内容",
+            "contact": "お問い合わせ"
+        },
+        "services": {
+            "title": "事業一覧",
+            "recruitment": "人材紹介と派遣サービス",
+            "studyAbroad": "留学サポートプログラム",
+            "translation": "多言語ドキュメントサービス",
+            "importExport": "国際貿易ソリューション"
+        },
+        "legal": {
+            "title": "その他",
+            "privacyProtection": "個人情報保護方針",
+            "privacyPolicy": "プライバシーポリシー"
+        },
+        "copyright": "All Rights Reserved."
+    },
     "button": {
         "recruitment": "採用情報",
         "jobSeekers": "お仕事をお探しの方",
