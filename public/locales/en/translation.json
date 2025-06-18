@@ -824,5 +824,112 @@
             "description": "Please let us know the overview of documents you want to translate, languages, delivery date, etc.\nProfessional coordinators will propose the optimal plan.",
             "buttonText": "Request Free Quote"
         }
+    },
+    "jobApplicationForm": {
+        "title": "🌸 Job Consultation Application Form / Job Application Form",
+        "subtitle": "💡 Apply for jobs in Japan now. You can fill out the form in Japanese or English. Personal information is strictly managed.",
+        "successMessage": "Your application has been submitted. We will contact you within 3 business days.",
+        "fields": {
+            "fullName": "Full Name *",
+            "email": "Email Address *",
+            "gender": "Gender *",
+            "birthDate": "Date of Birth *",
+            "nationality": "Nationality *",
+            "visaType": "Visa Type *",
+            "japaneseLevel": "Japanese Level (N1-N5) *",
+            "desiredJob": "Desired Job *",
+            "contact": "Phone Number *",
+            "majorField": "Major Field",
+            "educationExperience": "Education & Experience *",
+            "selfIntro": "Self Introduction *",
+            "consultation": "Consultation Content",
+            "resume": "Resume Upload (PDF recommended) *"
+        },
+        "placeholders": {
+            "fullName": "Taro Tanaka",
+            "email": "example@email.com",
+            "nationality": "e.g., Nepal / Japan / Vietnam",
+            "desiredJob": "Engineer, Care Worker, Sales, etc.",
+            "contact": "080-1234-5678",
+            "majorField": "Computer Science",
+            "educationExperience": "Please provide details of your education and work experience",
+            "selfIntro": "Please write your self-introduction",
+            "consultation": "Please let us know your questions or consultation about employment"
+        },
+        "options": {
+            "gender": [
+                {
+                    "value": "",
+                    "label": "Please select",
+                    "disabled": true
+                },
+                {
+                    "value": "male",
+                    "label": "Male"
+                },
+                {
+                    "value": "female",
+                    "label": "Female"
+                },
+                {
+                    "value": "other",
+                    "label": "Other"
+                }
+            ],
+            "visaType": [
+                {
+                    "value": "",
+                    "label": "Please select"
+                },
+                {
+                    "value": "留学生",
+                    "label": "Student Visa"
+                },
+                {
+                    "value": "技能実習",
+                    "label": "Skilled Labor"
+                },
+                {
+                    "value": "企業内転勤",
+                    "label": "Intra-company Transferee"
+                },
+                {
+                    "value": "専門職",
+                    "label": "Specialist Visa"
+                }
+            ],
+            "japaneseLevel": [
+                {
+                    "value": "",
+                    "label": "Please select"
+                },
+                {
+                    "value": "N1",
+                    "label": "N1"
+                },
+                {
+                    "value": "N2",
+                    "label": "N2"
+                },
+                {
+                    "value": "N3",
+                    "label": "N3"
+                },
+                {
+                    "value": "N4",
+                    "label": "N4"
+                },
+                {
+                    "value": "N5",
+                    "label": "N5"
+                }
+            ]
+        },
+        "submitButton": "📨 Submit Application / Send"
+    },
+    "contactModal": {
+        "companyTitle": "Corporate Contact Form",
+        "studentTitle": "Job Seeker Contact Form",
+        "closeLabel": "Close modal"
     }
 }

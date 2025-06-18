@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import { useTranslation } from 'react-i18next';
 
 export default function JobApplicationForm() {
+  const { t, ready } = useTranslation();
+  
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -29,8 +32,87 @@ export default function JobApplicationForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
-    alert("応募が送信されました。3営業日以内にご連絡いたします。");
+    const successMessage = ready ? t('jobApplicationForm.successMessage') : "応募が送信されました。3営業日以内にご連絡いたします。";
+    alert(successMessage);
     // add submission logic here
+  };
+
+  // Fallback data in case translation fails
+  const fallbackData = {
+    title: "🌸 就職相談申し込みフォーム / 求人応募フォーム",
+    subtitle: "💡 今すぐ日本の求人に応募しましょう。記入は日本語または英語でOKです。個人情報は厳重に管理します。",
+    fields: {
+      fullName: "氏名 / Full Name *",
+      email: "メールアドレス / Email *",
+      gender: "性別 / Gender *",
+      birthDate: "生年月日 / Date of Birth *",
+      nationality: "国籍 / Nationality *",
+      visaType: "在留資格 / Visa Type *",
+      japaneseLevel: "日本語能力（N1〜N5など）*",
+      desiredJob: "希望職種 / Desired Job *",
+      contact: "電話番号 *",
+      majorField: "専攻分野 / Major Field",
+      educationExperience: "学歴・職歴 / Education & Experience *",
+      selfIntro: "自己PR / Self Introduction *",
+      consultation: "ご相談内容 / Consultation Content",
+      resume: "履歴書アップロード（PDF推奨）*"
+    },
+    placeholders: {
+      fullName: "田中太郎",
+      email: "example@email.com",
+      nationality: "例: ネパール / Japan / Vietnam",
+      desiredJob: "エンジニア, 介護, 販売など",
+      contact: "080-1234-5678",
+      majorField: "コンピューターサイエンス",
+      educationExperience: "学歴・職歴を詳しく記入してください",
+      selfIntro: "自己PRを記入してください",
+      consultation: "就職についてのご質問やご相談をお聞かせください"
+    },
+    options: {
+      gender: [
+        { value: "", label: "選択してください / Please select", disabled: true },
+        { value: "male", label: "男性 / Male" },
+        { value: "female", label: "女性 / Female" },
+        { value: "other", label: "その他 / Other" },
+      ],
+      visaType: [
+        { value: "", label: "選択してください / Please select" },
+        { value: "留学生", label: "留学生 / Student Visa" },
+        { value: "技能実習", label: "技能実習 / Skilled Labor" },
+        { value: "企業内転勤", label: "企業内転勤 / Intra-company Transferee" },
+        { value: "専門職", label: "専門職 / Specialist Visa" },
+      ],
+      japaneseLevel: [
+        { value: "", label: "選択してください / Please select" },
+        { value: "N1", label: "N1" },
+        { value: "N2", label: "N2" },
+        { value: "N3", label: "N3" },
+        { value: "N4", label: "N4" },
+        { value: "N5", label: "N5" },
+      ]
+    },
+    submitButton: "📨 相談を申し込む / 送信する"
+  };
+
+  // Get translations with fallback
+  const getTranslation = (key, fallback) => {
+    if (!ready) return fallback;
+    try {
+      const translation = t(key);
+      return translation !== key ? translation : fallback;
+    } catch (error) {
+      return fallback;
+    }
+  };
+
+  const getOptions = (optionType) => {
+    if (!ready) return fallbackData.options[optionType];
+    try {
+      const options = t(`jobApplicationForm.options.${optionType}`, { returnObjects: true });
+      return Array.isArray(options) ? options : fallbackData.options[optionType];
+    } catch (error) {
+      return fallbackData.options[optionType];
+    }
   };
 
   return (
@@ -39,52 +121,47 @@ export default function JobApplicationForm() {
       className="origami-fold bg-white rounded-2xl p-8 japanese-shadow max-w-4xl mx-auto space-y-6"
     >
       <h2 className="text-3xl font-bold text-center mb-6 text-gray-800 brush-stroke">
-        🌸 就職相談申し込みフォーム / 求人応募フォーム
+        {getTranslation('jobApplicationForm.title', fallbackData.title)}
       </h2>
       <p className="text-gray-600 text-center mb-6">
-        💡 今すぐ日本の求人に応募しましょう。記入は日本語または英語でOKです。個人情報は厳重に管理します。
+        {getTranslation('jobApplicationForm.subtitle', fallbackData.subtitle)}
       </p>
 
       <div className="grid md:grid-cols-2 gap-6">
         {/* Full Name */}
         <InputField
-          label="氏名 / Full Name *"
+          label={getTranslation('jobApplicationForm.fields.fullName', fallbackData.fields.fullName)}
           name="fullName"
           value={formData.fullName}
           onChange={handleChange}
-          placeholder="田中太郎"
+          placeholder={getTranslation('jobApplicationForm.placeholders.fullName', fallbackData.placeholders.fullName)}
           required
         />
 
         {/* Email */}
         <InputField
-          label="メールアドレス / Email *"
+          label={getTranslation('jobApplicationForm.fields.email', fallbackData.fields.email)}
           type="email"
           name="email"
           value={formData.email}
           onChange={handleChange}
-          placeholder="example@email.com"
+          placeholder={getTranslation('jobApplicationForm.placeholders.email', fallbackData.placeholders.email)}
           required
         />
 
         {/* Gender */}
         <SelectField
-          label="性別 / Gender *"
+          label={getTranslation('jobApplicationForm.fields.gender', fallbackData.fields.gender)}
           name="gender"
           value={formData.gender}
           onChange={handleChange}
           required
-          options={[
-            { value: "", label: "選択してください / Please select", disabled: true },
-            { value: "male", label: "男性 / Male" },
-            { value: "female", label: "女性 / Female" },
-            { value: "other", label: "その他 / Other" },
-          ]}
+          options={getOptions('gender')}
         />
 
         {/* Birth Date */}
         <InputField
-          label="生年月日 / Date of Birth *"
+          label={getTranslation('jobApplicationForm.fields.birthDate', fallbackData.fields.birthDate)}
           type="date"
           name="birthDate"
           value={formData.birthDate}
@@ -94,110 +171,97 @@ export default function JobApplicationForm() {
 
         {/* Nationality */}
         <InputField
-          label="国籍 / Nationality *"
+          label={getTranslation('jobApplicationForm.fields.nationality', fallbackData.fields.nationality)}
           name="nationality"
           value={formData.nationality}
           onChange={handleChange}
-          placeholder="例: ネパール / Japan / Vietnam"
+          placeholder={getTranslation('jobApplicationForm.placeholders.nationality', fallbackData.placeholders.nationality)}
           required
         />
 
         {/* Visa Type */}
         <SelectField
-          label="在留資格 / Visa Type *"
+          label={getTranslation('jobApplicationForm.fields.visaType', fallbackData.fields.visaType)}
           name="visaType"
           value={formData.visaType}
           onChange={handleChange}
           required
-          options={[
-            { value: "", label: "選択してください / Please select" },
-            { value: "留学生", label: "留学生 / Student Visa" },
-            { value: "技能実習", label: "技能実習 / Skilled Labor" },
-            { value: "企業内転勤", label: "企業内転勤 / Intra-company Transferee" },
-            { value: "専門職", label: "専門職 / Specialist Visa" },
-          ]}
+          options={getOptions('visaType')}
         />
 
         {/* Japanese Level */}
         <SelectField
-          label="日本語能力（N1〜N5など）*"
+          label={getTranslation('jobApplicationForm.fields.japaneseLevel', fallbackData.fields.japaneseLevel)}
           name="japaneseLevel"
           value={formData.japaneseLevel}
           onChange={handleChange}
           required
-          options={[
-            { value: "", label: "選択してください / Please select" },
-            { value: "N1", label: "N1" },
-            { value: "N2", label: "N2" },
-            { value: "N3", label: "N3" },
-            { value: "N4", label: "N4" },
-            { value: "N5", label: "N5" },
-          ]}
+          options={getOptions('japaneseLevel')}
         />
 
         {/* Desired Job */}
         <InputField
-          label="希望職種 / Desired Job *"
+          label={getTranslation('jobApplicationForm.fields.desiredJob', fallbackData.fields.desiredJob)}
           name="desiredJob"
           value={formData.desiredJob}
           onChange={handleChange}
-          placeholder="エンジニア, 介護, 販売など"
+          placeholder={getTranslation('jobApplicationForm.placeholders.desiredJob', fallbackData.placeholders.desiredJob)}
           required
         />
 
         {/* Contact */}
         <InputField
-          label="電話番号 *"
+          label={getTranslation('jobApplicationForm.fields.contact', fallbackData.fields.contact)}
           name="contact"
           value={formData.contact}
           onChange={handleChange}
-          placeholder="080-1234-5678"
+          placeholder={getTranslation('jobApplicationForm.placeholders.contact', fallbackData.placeholders.contact)}
           required
         />
 
         {/* Major Field */}
         <InputField
-          label="専攻分野 / Major Field"
+          label={getTranslation('jobApplicationForm.fields.majorField', fallbackData.fields.majorField)}
           name="majorField"
           value={formData.majorField}
           onChange={handleChange}
-          placeholder="コンピューターサイエンス"
+          placeholder={getTranslation('jobApplicationForm.placeholders.majorField', fallbackData.placeholders.majorField)}
         />
       </div>
 
       {/* Education & Experience */}
       <TextAreaField
-        label="学歴・職歴 / Education & Experience *"
+        label={getTranslation('jobApplicationForm.fields.educationExperience', fallbackData.fields.educationExperience)}
         name="educationExperience"
         value={formData.educationExperience}
         onChange={handleChange}
         required
-        placeholder="学歴・職歴を詳しく記入してください"
+        placeholder={getTranslation('jobApplicationForm.placeholders.educationExperience', fallbackData.placeholders.educationExperience)}
       />
 
       {/* Self Introduction */}
       <TextAreaField
-        label="自己PR / Self Introduction *"
+        label={getTranslation('jobApplicationForm.fields.selfIntro', fallbackData.fields.selfIntro)}
         name="selfIntro"
         value={formData.selfIntro}
         onChange={handleChange}
         required
-        placeholder="自己PRを記入してください"
+        placeholder={getTranslation('jobApplicationForm.placeholders.selfIntro', fallbackData.placeholders.selfIntro)}
       />
 
       {/* Consultation */}
       <TextAreaField
-        label="ご相談内容 / Consultation Content"
+        label={getTranslation('jobApplicationForm.fields.consultation', fallbackData.fields.consultation)}
         name="consultation"
         value={formData.consultation}
         onChange={handleChange}
-        placeholder="就職についてのご質問やご相談をお聞かせください"
+        placeholder={getTranslation('jobApplicationForm.placeholders.consultation', fallbackData.placeholders.consultation)}
       />
 
       {/* Resume Upload */}
       <div>
         <label className="block mb-2 font-semibold text-gray-700">
-          履歴書アップロード（PDF推奨）*
+          {getTranslation('jobApplicationForm.fields.resume', fallbackData.fields.resume)}
         </label>
         <input
           type="file"
@@ -215,7 +279,7 @@ export default function JobApplicationForm() {
           type="submit"
           className="zen-border bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-10 py-4 rounded-full text-lg font-bold hover:from-indigo-700 hover:to-purple-800 transition-all transform hover:scale-105 japanese-shadow"
         >
-          📨 相談を申し込む / 送信する
+          {getTranslation('jobApplicationForm.submitButton', fallbackData.submitButton)}
         </button>
       </div>
     </form>
