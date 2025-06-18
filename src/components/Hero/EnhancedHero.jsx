@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { FaShoePrints } from "react-icons/fa";
 import WalkingFootsteps from './WalkingFootsteps';
+import LanguageSelector from '../LanguageSelector'; // Fixed import path and name
 
 const AnimatedText = ({ text, className = "", delay = 0, scrollScale = false }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -71,6 +73,7 @@ const ParallaxBackground = () => {
 
 const EnhancedHero = () => {
   const [scrollY, setScrollY] = useState(0);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -82,6 +85,11 @@ const EnhancedHero = () => {
     <div className="relative bg-white text-gray-800 min-h-screen">
       <ParallaxBackground />
       
+      {/* Language Selector - Fixed position at top right */}
+      <div className="fixed top-6 right-6 z-50">
+        <LanguageSelector />
+      </div>
+      
       <section className="relative min-h-screen overflow-hidden">
         <WalkingFootsteps />
 
@@ -90,12 +98,12 @@ const EnhancedHero = () => {
             {/* Headline with scroll scaling */}
             <div className="mb-8">
               <AnimatedText
-                text="「人」と「人」をつなぐ"
+                text={t('hero.connecting')}
                 className="text-2xl md:text-3xl font-medium text-gray-700 block mb-2"
                 delay={300}
               />
               <AnimatedText
-                text="有料職業紹介サービス"
+                text={t('hero.jobPlacementService')}
                 className="text-4xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-brand-primary via-purple-600 to-brand-navy bg-clip-text text-transparent block mb-4"
                 delay={600}
                 scrollScale={true}
@@ -104,12 +112,12 @@ const EnhancedHero = () => {
 
             {/* Hero Motivational Subtext */}
             <AnimatedText
-              text="🌍 日本で働きたいあなたへ。その一歩が、あなたの未来を変える。"
+              text={t('hero.motivationalText1')}
               className="text-lg md:text-xl text-blue-700 font-semibold mb-4 block"
               delay={800}
             />
             <AnimatedText
-              text="🎯 就職、転職、キャリアアップ——One Stepは、日本で頑張るあなたのはじめの一歩を全力で応援します。"
+              text={t('hero.motivationalText2')}
               className="text-lg md:text-xl text-purple-700 font-medium mb-8 block"
               delay={1000}
             />
@@ -122,7 +130,7 @@ const EnhancedHero = () => {
               }}
             >
               <AnimatedText
-                text="ようこそ、ワンステップ株式会社へ。私たちは、日本における国際人材の有料職業紹介、語学教育、そして異文化サポートを提供する信頼できるパートナーです。世界中の優秀な人材と日本の企業をつなぎ、グローバルなキャリアの成功を全力でサポートします。"
+                text={t('hero.welcomeDescription')}
                 className="text-base md:text-lg text-gray-600 leading-relaxed mb-8 block"
                 delay={1200}
               />
@@ -138,12 +146,12 @@ const EnhancedHero = () => {
               }}
             >
               <button className="group px-8 py-4 bg-gradient-to-r from-brand-primary to-brand-navy text-white font-semibold rounded-full hover:shadow-2xl hover:shadow-blue-500/25 hover:scale-105 transition-all duration-300 relative overflow-hidden">
-                <span className="relative z-10">お仕事をお探しの方</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-brand-navy  to-brand-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <span className="relative z-10">{t('hero.cta.jobSeekers')}</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-brand-navy to-brand-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
               <button className="group px-8 py-4 bg-gradient-to-r from-brand-navy to-brand-primary text-white font-semibold rounded-full hover:shadow-2xl hover:shadow-blue-500/25 hover:scale-105 transition-all duration-300 relative overflow-hidden">
-                <span className="relative z-10">企業様向けサービス</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-brand-primary  to-brand-navy opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <span className="relative z-10">{t('hero.cta.companies')}</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-brand-primary to-brand-navy opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
             </div>
 
@@ -155,12 +163,12 @@ const EnhancedHero = () => {
               }}
             >
               <AnimatedText
-                text="📘 One Step株式会社とは？"
+                text={t('hero.aboutTitle')}
                 className="text-xl font-semibold text-gray-700 mb-2 block"
                 delay={1600}
               />
               <AnimatedText
-                text="私たちは、日本で働きたい外国人と、信頼できる企業をつなぐ「人の架け橋」です。ただのマッチングではなく、「文化」「目標」「未来」までも支えることが、私たちのミッションです。"
+                text={t('hero.aboutDescription')}
                 className="text-base text-gray-600 leading-relaxed block"
                 delay={1800}
               />
@@ -179,7 +187,7 @@ const EnhancedHero = () => {
           <div className="w-6 h-10 border-2 border-blue-400 rounded-full flex justify-center relative">
             <div className="w-1 h-3 bg-gradient-to-b from-blue-400 to-purple-400 rounded-full mt-2 animate-bounce"></div>
             <div className="absolute -bottom-8 text-xs text-gray-500 whitespace-nowrap animate-pulse">
-              スクロールして詳細を見る
+              {t('hero.scrollIndicator')}
             </div>
           </div>
         </div>
