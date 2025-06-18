@@ -13,6 +13,37 @@
         "aboutDescription": "We are a 'bridge between people' connecting foreigners who want to work in Japan with reliable companies. Our mission is to support not just matching, but also 'culture,' 'goals,' and 'future.'",
         "scrollIndicator": "Scroll to see details"
     },
+    "newsAndNotices": {
+        "title": "News & Notices",
+        "viewAll": "View All News",
+        "items": [
+            {
+                "date": "July 1, 2025",
+                "title": "Privacy Policy Update Notice",
+                "category": "Latest News"
+            },
+            {
+                "date": "July 1, 2025",
+                "title": "Website Renewal Announcement",
+                "category": "Latest News"
+            },
+            {
+                "date": "July 1, 2025",
+                "title": "Year-End and New Year Holiday Notice",
+                "category": "Latest News"
+            },
+            {
+                "date": "June 15, 2025",
+                "title": "New Service Launch Announcement",
+                "category": "Services"
+            },
+            {
+                "date": "June 10, 2025",
+                "title": "Summer Holiday Notice",
+                "category": "Important"
+            }
+        ]
+    },
     "whatWeDo": {
         "title": "Our Services",
         "subtitle": "What We Do",
