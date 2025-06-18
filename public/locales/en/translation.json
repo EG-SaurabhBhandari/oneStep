@@ -1,83 +1,63 @@
 {
-    "nav": {
-        "home": "Home",
-        "philosophy": "Philosophy",
-        "company": "Company Info",
-        "greeting": "CEO Greeting",
-        "services": "Services",
-        "teams": "Teams",
-        "students": "Students",
-        "translation": "Translation Service",
-        "contact": "Contact",
-        "companyContact": "Company Contact",
-        "faq": "FAQ",
-        "recruitment": "Recruitment",
-        "privacy": "Privacy",
-        "privacyPolicy": "Privacy Policy"
-    },
-    "hero": {
-        "title": "Welcome to Our Company",
-        "subtitle": "Professional Services & Solutions",
-        "description": "We provide comprehensive business solutions with cutting-edge technology and expert consultation.",
-        "cta": "Learn More"
-    },
-    "philosophy": {
-        "title": "Our Philosophy",
-        "description": "We believe in delivering excellence through innovation and dedication."
-    },
-    "company": {
-        "title": "Company Information",
-        "description": "Learn more about our company, history, and values."
-    },
-    "services": {
-        "title": "Our Services",
-        "description": "Comprehensive solutions tailored to your business needs."
-    },
-    "teams": {
-        "title": "Our Team",
-        "description": "Meet our professional and experienced team members."
-    },
-    "students": {
-        "title": "For Students",
-        "description": "Special programs and opportunities for students."
-    },
-    "translation": {
-        "title": "Translation Services",
-        "description": "Professional translation services in multiple languages."
-    },
-    "contact": {
-        "title": "Contact Us",
-        "name": "Name",
-        "email": "Email",
-        "message": "Message",
-        "send": "Send Message",
-        "description": "Get in touch with us for any inquiries."
-    },
-    "faq": {
-        "title": "Frequently Asked Questions",
-        "description": "Find answers to common questions."
-    },
-    "recruitment": {
-        "title": "Recruitment",
-        "description": "Join our team and grow your career with us."
-    },
     "hero": {
         "connecting": "Connecting People to People",
-        "jobPlacementService": "Professional Job Placement Service",
-        "motivationalText1": "🌍 For those who want to work in Japan. That first step will change your future.",
-        "motivationalText2": "🎯 Employment, career change, career advancement - One Step fully supports your first step in Japan.",
-        "welcomeDescription": "Welcome to One Step Corporation. We are a trusted partner providing professional job placement services, language education, and cross-cultural support for international talent in Japan. We connect talented individuals from around the world with Japanese companies and fully support global career success.",
+        "jobPlacementService": "Job Placement Service",
+        "motivationalText1": "🌍 For those who want to work in Japan. That one step will change your future.",
+        "motivationalText2": "🎯 Employment, career change, career advancement—One Step fully supports your first step in Japan.",
+        "welcomeDescription": "Welcome to One Step Co., Ltd. We are a trusted partner providing paid job placement, language education, and cross-cultural support for international talent in Japan. We connect excellent talent from around the world with Japanese companies and fully support global career success.",
         "cta": {
             "jobSeekers": "For Job Seekers",
-            "companies": "Corporate Services"
+            "companies": "For Companies"
         },
-        "aboutTitle": "📘 What is One Step Corporation?",
-        "aboutDescription": "We are the 'bridge between people' connecting foreigners who want to work in Japan with reliable companies. Our mission is not just matching, but supporting 'culture,' 'goals,' and 'future' as well.",
+        "aboutTitle": "📘 What is One Step Co., Ltd.?",
+        "aboutDescription": "We are a 'bridge between people' connecting foreigners who want to work in Japan with reliable companies. Our mission is to support not just matching, but also 'culture,' 'goals,' and 'future.'",
         "scrollIndicator": "Scroll to see details"
+    },
+    "whatWeDo": {
+        "title": "Our Services",
+        "subtitle": "What We Do",
+        "services": {
+            "recruitment": {
+                "title": "Recruitment & Staffing Services",
+                "description": "We provide recruitment and staffing services that match foreign job seekers with Japanese companies. We support various employment types including full-time, part-time, and internships, ensuring a smooth recruitment process.",
+                "points": [
+                    "Jobs in hotels, factories, restaurants, logistics, and offices",
+                    "Visa support and interview preparation",
+                    "Multilingual recruitment consultants"
+                ]
+            },
+            "education": {
+                "title": "Student Support & Educational Consulting",
+                "description": "We help students from around the world find the best educational opportunities in Japan.",
+                "points": [
+                    "School and university introductions and enrollment procedures",
+                    "Visa application support",
+                    "Housing search and part-time job advice"
+                ]
+            },
+            "translation": {
+                "title": "Translation & Document Support",
+                "description": "We provide professional translation and document preparation support for the following documents.",
+                "points": [
+                    "Residence applications, work permits, company-related documents",
+                    "School-related documents and certificates",
+                    "Translation of birth certificates, marriage certificates, visa-related documents"
+                ]
+            },
+            "importExport": {
+                "title": "Import/Export Support Services",
+                "description": "We provide comprehensive import/export support in international trade.",
+                "points": [
+                    "Import/export of goods between Japan and South Asia",
+                    "Logistics arrangements and related document preparation",
+                    "Business matching and supplier introductions"
+                ]
+            }
+        }
     },
     "common": {
         "loading": "Loading...",
-        "error": "Something went wrong",
+        "error": "An error occurred",
         "backToHome": "Back to Home"
     }
 }

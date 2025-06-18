@@ -11,7 +11,7 @@ i18n
     .init({
         lng: 'ja', // default language
         fallbackLng: 'en',
-        debug: false,
+        debug: true,
 
         // Detection options
         detection: {

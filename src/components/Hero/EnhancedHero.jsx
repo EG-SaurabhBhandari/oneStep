@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FaShoePrints } from "react-icons/fa";
 import WalkingFootsteps from './WalkingFootsteps';
-import LanguageSelector from '../LanguageSelector'; // Fixed import path and name
+import LanguageSelector from '../LanguageSelector'; 
 
 const AnimatedText = ({ text, className = "", delay = 0, scrollScale = false }) => {
   const [isVisible, setIsVisible] = useState(false);
