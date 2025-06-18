@@ -118,6 +118,41 @@
             "title": "Google Map"
         }
     },
+    "contact": {
+        "infoTitle": {
+            "title": "Contact Us",
+            "description": "Please select the appropriate contact window according to your inquiry.",
+            "highlightText": "Our staff will respond promptly."
+        },
+        "backgroundText": "CONTACT US",
+        "selectionCards": {
+            "company": {
+                "title": "For Corporate Representatives",
+                "description": "For inquiries about staffing and recruitment"
+            },
+            "jobSeeker": {
+                "title": "For Job Seekers",
+                "description": "For job introductions and career consultations"
+            }
+        },
+        "accessSection": {
+            "backgroundText": "ACCESS",
+            "title": "Access & Contact"
+        },
+        "contactInfo": {
+            "title": "Contact",
+            "phone": "052-123-4567",
+            "email": "info@onestep.co.jp"
+        },
+        "accessInfo": {
+            "title": "Access",
+            "address": "5-25 Kannoncho, Minami Ward, Nagoya City, Aichi Prefecture, Kannon Building 3c",
+            "directions": "※5 minutes walk from Sakurahonmachi Station on Subway Sakura-dori Line"
+        },
+        "map": {
+            "title": "Company Location Map"
+        }
+    },
     "newsAndNotices": {
         "title": "News & Notices",
         "viewAll": "View All News",
@@ -274,5 +309,433 @@
         "loading": "Loading...",
         "error": "An error occurred",
         "backToHome": "Back to Home"
+    },
+    "faqPage": {
+        "infoTitle": {
+            "title": "Frequently Asked Questions",
+            "description": "FAQ",
+            "highlightText": "Please check here first for any questions about our services."
+        },
+        "tabs": {
+            "jobSeekers": "For Job Seekers",
+            "companies": "For Corporate Representatives"
+        },
+        "cta": {
+            "jobSeekers": {
+                "tagText": "For Job Seekers / お仕事をお探しの方へ",
+                "title": "For Employment and Career Change Consultations",
+                "description": "Our professional career consultants will provide careful support. Please feel free to consult with us.",
+                "buttonText": "Contact & Inquiries →"
+            },
+            "companies": {
+                "tagText": "For Companies / 企業様向け",
+                "title": "For Foreign Hiring and HR Consultations",
+                "description": "We will propose the most suitable talent for your company. Please feel free to contact us first.",
+                "buttonText": "Contact & Inquiries →"
+            }
+        }
+    },
+    "philosophy": {
+        "infoTitle": {
+            "title": "Corporate Philosophy",
+            "description": "Philosophy",
+            "highlightText": "\"That one step changes the future.\""
+        },
+        "ceoMessage": {
+            "title": "Our Thoughts",
+            "quote": "I myself was once someone who was lost and troubled by the \"first step\" in Japan. That's why I want to give the strongest push to everyone who is trying their best in Japan now. Believing that your \"one step\" will change the future, we will continue to stand by you.",
+            "signature": "— Sudip Regmi (President & CEO)"
+        },
+        "mission": {
+            "title": "Mission",
+            "subtitle": "Leading people and companies one step forward.",
+            "description": "Japan is now facing a serious labor shortage, while many excellent talents around the world are seeking opportunities to thrive. Through our paid job placement service, One Step aims to provide:",
+            "points": [
+                "Reliable and capable human resources to companies",
+                "Safe and secure workplaces and environments to job seekers"
+            ],
+            "conclusion": "This is our mission."
+        },
+        "vision": {
+            "title": "Vision",
+            "subtitle": "Creating a society where diverse talents can utilize their individuality and abilities to thrive.",
+            "description": "A society that transcends nationality and culture, where the value of \"people\" is respected. One Step aims for such a future and pursues value creation centered on \"people\"."
+        },
+        "promises": {
+            "title": "Our Promises",
+            "items": [
+                "With sincerity. With care. Standing by your side.",
+                "We face each person's \"life\" and provide trust and peace of mind.",
+                "We face each company's \"challenges\" and realize sustainable talent retention."
+            ]
+        },
+        "slogan": {
+            "title": "Slogan",
+            "text": "\"That one step changes the future.\"",
+            "description": "What we value is the power of \"one step.\" It may be a small step. But that one step changes the future of companies, enriches people's lives, and becomes a great driving force that moves society as a whole.",
+            "conclusion": "One Step Co., Ltd. will move forward with you into the future as a partner who walks together with that one step."
+        }
+    },
+    "privacy": {
+        "infoTitle": {
+            "title": "Personal Information Protection Basic Policy",
+            "description": "One Step Co., Ltd. pays the utmost attention to the protection of personal information and pledges to be a company that responds to the trust of individuals.",
+            "highlightText": "Respect for privacy. That is the beginning of trust."
+        },
+        "backgroundText": "PRIVACY",
+        "basicPolicy": {
+            "title": "Basic Policy",
+            "content": "One Step Co., Ltd. deeply recognizes that personal information constitutes important information that makes up privacy, and believes that all personal information must be handled carefully under the philosophy of respecting individual personality. In order to become a company that is trusted, loved, and that we ourselves can be proud of by all people (hereinafter collectively referred to as \"individuals\"), including customers and business partners, we have established the following basic policy and strive to protect personal information."
+        },
+        "sections": [
+            {
+                "title": "1. Regarding the Purpose of Use of Personal Information",
+                "content": "When we provide personal information, we will use personal information within the scope of the purpose clearly stated when providing personal information."
+            },
+            {
+                "title": "2. Regarding Disclosure of Personal Information to Third Parties",
+                "content": "We will not disclose personal information to any third party except in the following cases:",
+                "items": [
+                    "When there is consent from the individual",
+                    "When we judge it appropriate to respond from our affiliated companies or agencies based on the content of inquiries from individuals",
+                    "When it is necessary to disclose to business outsourcing companies or partner companies that have signed confidentiality agreements in advance for the implementation of the collection purpose clearly stated to individuals",
+                    "When it is necessary to disclose personal information to financial institutions for payment settlement for product purchases or paid service usage",
+                    "When disclosing in a state where individuals cannot be identified (statistical materials, etc.)",
+                    "When disclosure to third parties is permitted by laws, regulations, guidelines, etc."
+                ],
+                "additional": "When we provide or outsource the processing of personal information we hold to third parties, we will pay sufficient attention to the selection of the recipient or outsourcee, and strive to provide necessary supervision to ensure appropriate and reliable protection measures similar to our handling."
+            },
+            {
+                "title": "3. Regarding Management of Personal Information",
+                "content": "We will appropriately manage individuals' personal information and implement preventive measures and safety measures against unauthorized access, loss, destruction, alteration, leakage, etc. of personal information. We will also continue to implement internal education regarding the protection and appropriate handling of personal information."
+            },
+            {
+                "title": "4. Regarding Inquiries About Personal Information",
+                "content": "When individuals wish to inquire, correct, add, or delete their personal information, we will respond promptly based on our prescribed procedures."
+            },
+            {
+                "title": "5. Regarding Compliance with Laws and Regulations and Review",
+                "content": "We will comply with applicable laws and regulations regarding personal information and strive for continuous improvement and enhancement of our personal information protection initiatives."
+            }
+        ],
+        "signature": {
+            "company": "One Step Co., Ltd.",
+            "representative": "President & CEO: Sudip Regmi"
+        }
+    },
+    "privacyPolicy": {
+        "title": "Privacy Policy",
+        "subtitle": "Personal Information Protection Policy",
+        "backgroundText": "PRIVACY",
+        "introduction": "One Step Co., Ltd. recognizes the importance of personal information acquired in the services we provide and establishes the following personal information protection policy to strive for appropriate management and protection.",
+        "sections": [
+            {
+                "title": "1. Acquisition of Personal Information",
+                "content": "We will acquire personal information by appropriate and fair means, clearly stating the purpose of use within the necessary scope."
+            },
+            {
+                "title": "2. Purpose of Use of Personal Information",
+                "content": "We will use the acquired personal information for the following purposes:",
+                "items": [
+                    "Provision of paid job placement services",
+                    "Contact with applicants, interviews, and job introduction related work",
+                    "Matching work with companies",
+                    "Various notifications and service information",
+                    "Response based on laws and regulations"
+                ]
+            },
+            {
+                "title": "3. Provision of Personal Information to Third Parties",
+                "content": "We will not provide acquired personal information to third parties except in the following cases:",
+                "items": [
+                    "When there is consent from the individual",
+                    "When based on laws and regulations",
+                    "When necessary for the protection of human life, body, or property"
+                ]
+            },
+            {
+                "title": "4. Management of Personal Information",
+                "content": "We will implement necessary and appropriate safety management measures to prevent leakage, loss, alteration, and unauthorized access of personal information."
+            },
+            {
+                "title": "5. Disclosure, Correction, Deletion, etc. of Personal Information",
+                "content": "When there are requests from individuals for disclosure, correction, addition, deletion, or suspension of use of their personal information, we will respond appropriately."
+            },
+            {
+                "title": "6. Legal Compliance and Review",
+                "content": "We will comply with laws and other norms regarding personal information protection and strive to review and improve the content of this policy as appropriate."
+            },
+            {
+                "title": "7. Contact Window",
+                "content": "For inquiries regarding the handling of personal information, please contact us below:",
+                "contactInfo": {
+                    "company": "One Step Co., Ltd.",
+                    "address": "Address: 〒457-0828 5-25 Kannoncho, Minami Ward, Nagoya City, Aichi Prefecture, Kannon Building 3c",
+                    "phone": "Phone: 052-829-1674",
+                    "email": "Email: info@onestep.co.jp"
+                }
+            }
+        ]
+    },
+    "recruitmentPage": {
+        "infoTitle": {
+            "title": "Recruitment Information",
+            "description": "RECRUITMENT",
+            "highlightText": "Would you like to create the future with us?"
+        },
+        "qualitiesSection": {
+            "title": "Qualities We Seek",
+            "items": [
+                {
+                    "title": "Sincere Response Ability",
+                    "description": "We value the attitude of sincerely facing each applicant."
+                },
+                {
+                    "title": "Growth Mindset",
+                    "description": "We welcome people who respond flexibly to change and always have an attitude of learning."
+                },
+                {
+                    "title": "Power to Connect with People",
+                    "description": "We seek people who have the passion to connect people with people, and companies with people."
+                }
+            ]
+        },
+        "jobDetails": {
+            "title": "Job Requirements",
+            "position": "Career Consultant (Human Resource Coordinator)",
+            "responsibilities": "Career counseling with job seekers, job introductions, talent proposals to companies, interview preparation, post-employment follow-up, etc.",
+            "salary": "Monthly salary: 250,000 yen ~ 400,000 yen (determined based on experience and ability)",
+            "location": "5-25 Kannoncho, Minami Ward, Nagoya City, Aichi Prefecture, Kannon Building 3c"
+        },
+        "selectionFlow": {
+            "title": "Selection Process",
+            "steps": [
+                "Document Screening",
+                "First Interview",
+                "Second Interview",
+                "Job Offer"
+            ],
+            "descriptions": [
+                "We review resumes and work history for document screening.",
+                "Through an interview with our staff, we learn about your skills and motivation.",
+                "In the final interview, we confirm your understanding of our corporate philosophy and enthusiasm.",
+                "We will contact you about the job offer and proceed with procedures for joining the company."
+            ]
+        },
+        "employeeInterview": {
+            "title": "Employee Interview",
+            "questions": [
+                {
+                    "question": "Q. What is rewarding about this job?",
+                    "answer": "The happiest moment is when the job seekers I was in charge of successfully get job offers and report to me with a smile saying 'Thank you so much!' It's a job with great responsibility and reward, being able to witness important turning points in people's lives."
+                },
+                {
+                    "question": "Q. Please give a message to applicants.",
+                    "answer": "One Step is a company that accepts diversity and supports individual challenges. If you can be serious about helping others, let's create many 'steps to the future' together!"
+                }
+            ]
+        },
+        "accessSection": {
+            "title": "Access & Contact",
+            "contact": {
+                "title": "Contact",
+                "phone": "052-123-4567",
+                "email": "info@onestep.co.jp"
+            },
+            "access": {
+                "title": "Access",
+                "address": "5-25 Kannoncho, Minami Ward, Nagoya City, Aichi Prefecture, Kannon Building 3c",
+                "directions": "※5 minutes walk from Sakurahonmachi Station on Subway Sakura-dori Line"
+            }
+        },
+        "cta": {
+            "tagText": "For Those Considering Application / ご応募を検討されている方へ",
+            "title": "A new step starts here.",
+            "description": "Would you like to expand your possibilities together with us?",
+            "buttonText": "Go to Application Form",
+            "buttonLink": "https://docs.google.com/forms/d/e/1FAIpQLSdh6uGf2hrGfCRTZUuTFYR6abVvsrEHH77TrBDEsXg2IPDSLA/viewform"
+        }
+    },
+    "studentPage": {
+        "infoTitle": {
+            "title": "Career Support for International Students",
+            "description": "Career Support for International Students",
+            "highlightText": "Would you like to realize your career in Japan together with us?"
+        },
+        "supportSection": {
+            "imageAlt": "Worried international student",
+            "titlePrefix": "Are you worried about ",
+            "titleHighlight": "finding a job in Japan",
+            "titleSuffix": " alone?",
+            "concerns": [
+                "\"I don't know how to write a Japanese resume\"",
+                "\"I'm anxious about what to say in interviews\"",
+                "\"I can't find companies that can utilize my expertise\""
+            ],
+            "message": "Many international students feel anxious about finding jobs in Japan. We will support you with all our strength!"
+        },
+        "strengths": {
+            "items": [
+                {
+                    "title": "Resume Review & Interview Preparation",
+                    "description": "Professional consultants will thoroughly guide you from writing resumes and work history required for Japanese job hunting to interview responses that will be highly evaluated."
+                },
+                {
+                    "title": "Introduction to Companies Understanding International Students",
+                    "description": "We carefully select and introduce excellent companies with rich experience in hiring foreign employees and that value diversity. You can find jobs that utilize your expertise and language skills."
+                },
+                {
+                    "title": "Visa & Residence Status Consultation",
+                    "description": "We also support concerns about complex residence status, such as procedures for changing to work visas. We create an environment where you can concentrate on job hunting with peace of mind."
+                }
+            ]
+        },
+        "flow": {
+            "title": "Usage Flow",
+            "steps": [
+                "Contact Us",
+                "Career Counseling",
+                "Company Introduction & Interview Preparation",
+                "Job Offer & Visa Support"
+            ],
+            "descriptions": [
+                "Please feel free to contact us through web form or LINE. Our staff will contact you.",
+                "Based on your experience, skills, and hopes, we will think about your career direction together.",
+                "We carefully select and introduce companies that understand foreign talent, and also support document applications and interview preparation.",
+                "We provide total support for job hunting, including follow-up after job offers and visa consultations."
+            ]
+        },
+        "testimonials": {
+            "title": "User Testimonials",
+            "items": [
+                {
+                    "quote": "They carefully taught me Japanese job hunting rules that I couldn't understand alone, and I was able to approach interviews with confidence. I successfully received a job offer from my first-choice IT company!",
+                    "name": "Ms. Li",
+                    "origin": "From China"
+                },
+                {
+                    "quote": "I was anxious as a liberal arts graduate, but they introduced me to a sales position that could utilize my strengths. The follow-up after joining was also thorough, and I enjoy working every day.",
+                    "name": "Maya",
+                    "origin": "From Nepal"
+                }
+            ]
+        },
+        "jobApplicationForm": {
+            "title": "Job Application Form"
+        },
+        "cta": {
+            "tagText": "For International Students / 留学生の皆様へ",
+            "title": "We support your first step toward the future",
+            "description": "Please feel free to consult with us anytime about career development in Japan. Professional consultants will help you with sincere support.",
+            "buttonText": "Apply for Free Consultation →"
+        },
+        "teamsPage": {
+            "infoTitle": {
+                "title": "Our Team",
+                "description": "Meet Our Team",
+                "highlightText": "We are a team composed of foreign members, but we have lived in Japan for many years and deeply understand and respect Japanese culture and values through daily life and work. Some members have even acquired Japanese nationality, and we value contribution to and harmony with Japanese society. One Step Co., Ltd. is not simply a 'company by foreigners,' but wants to be a trusted presence for Japanese companies as a 'partner that understands Japan and grows together with Japan.'"
+            },
+            "members": [
+                {
+                    "nameJp": "Rishi Baral",
+                    "nameEn": "Rishi Baral",
+                    "titleJp": "Co-founder & Global Collaboration Director",
+                    "aboutJp": "I am from Nepal and currently enrolled in a doctoral program at Hokkaido University in Japan, conducting research on wildlife conservation and carnivore ecology. For over 10 years, I have been engaged in field research, international collaborative research, and academic exchange, and I apply the global perspective gained from these experiences to human resource development and cross-cultural collaboration. As Co-founder & Global Collaboration Director of One Step Co., Ltd., I serve as a bridge between excellent overseas talent and reliable domestic companies in Japan. Our mission is not simply to introduce human resources, but to build 'connections of trust and growth' that transcend borders and cultures."
+                },
+                {
+                    "nameJp": "Sailendra Ranabhat",
+                    "nameEn": "Sailendra Ranabhat",
+                    "titleJp": "Director",
+                    "aboutJp": "I came to Japan 14 years ago and graduated from Aichi Bunkyo University after attending Japanese language school and vocational school. After that, I got a job at a company and through deep contact with Japanese society and culture, my attachment to Japan grew stronger, and I eventually acquired Japanese nationality. Since 2023, I started my own business, and through my experience in corporate employment and entrepreneurship, I felt firsthand the challenges of 'labor shortage' and 'difficulty for foreigners to find jobs.' With the desire to become a 'bridge' for such challenges, I established 'One Step Co., Ltd.' I speak four languages: Japanese, Nepali, English, and Hindi, providing global support that connects diverse talent with companies."
+                }
+            ]
+        },
+        "translationServicePage": {
+            "infoTitle": {
+                "title": "Translation & Documentation Services",
+                "description": "Translation & Documentation Services",
+                "highlightText": "Beyond language barriers, taking business to the world."
+            },
+            "problemSection": {
+                "imageAlt": "Global business",
+                "titlePrefix": "Do you have these ",
+                "titleHighlight": "translation challenges",
+                "titleSuffix": "?",
+                "challenges": [
+                    "Machine translation quality is low and cannot be used for business.",
+                    "There are many technical terms, and we cannot find a company that can provide accurate translation.",
+                    "We want to expand to multiple languages, but we don't have the time or resources."
+                ],
+                "solution": "One Step is a professional translation partner that accelerates your company's global expansion."
+            },
+            "strengths": {
+                "items": [
+                    {
+                        "title": "Specialized Fields x Native Quality",
+                        "description": "Translators with specialized knowledge in each field team up with native speakers to achieve accurate and natural translations."
+                    },
+                    {
+                        "title": "Quick & Flexible Response",
+                        "description": "We respond flexibly to urgent projects. Speedy delivery according to your business schedule is possible."
+                    },
+                    {
+                        "title": "Various Document Formats",
+                        "description": "We handle all types of documents from contracts and technical manuals to websites and marketing materials."
+                    },
+                    {
+                        "title": "Thorough Confidentiality",
+                        "description": "Information entrusted by customers is managed with the highest level of security. Non-disclosure agreements (NDA) can also be concluded."
+                    }
+                ]
+            },
+            "flow": {
+                "title": "Service Flow",
+                "steps": [
+                    "Inquiry & Quote",
+                    "Order & Document Receipt",
+                    "Translation, Proofreading & Check",
+                    "Delivery"
+                ],
+                "descriptions": [
+                    "Please contact us via web form. We will provide a quote within the same day at the earliest.",
+                    "After formal order, please send us the documents or materials to be translated.",
+                    "Professional translators translate, and separate native staff strictly check the quality.",
+                    "We deliver translation data in your specified format. After-sales follow-up is also complete."
+                ]
+            },
+            "supportedFieldsSection": {
+                "titlePrefix": "Supported ",
+                "titleHighlight": "Fields"
+            },
+            "supportedFields": [
+                "IT & Technology",
+                "Legal & Contracts",
+                "Medical & Pharmaceutical",
+                "Finance & IR",
+                "Marketing",
+                "Technical Manuals",
+                "Websites"
+            ],
+            "supportedLanguagesSection": {
+                "titlePrefix": "Supported ",
+                "titleHighlight": "Languages",
+                "imageAlt": "Multilingual support"
+            },
+            "supportedLanguages": [
+                "English",
+                "Chinese (Simplified/Traditional)",
+                "Korean",
+                "Spanish",
+                "German",
+                "French",
+                "Vietnamese",
+                "Many others"
+            ],
+            "cta": {
+                "title": "Free Quote & Consultation Here",
+                "description": "Please let us know the overview of documents you want to translate, languages, delivery date, etc.\nProfessional coordinators will propose the optimal plan.",
+                "buttonText": "Request Free Quote"
+            }
+        }
     }
 }

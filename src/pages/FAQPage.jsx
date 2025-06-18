@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import Navbar from '../components/navbar/Navbar';
 import Footer from '../components/shared/Footer';
 import FAQItem from '../components/shared/FAQItems';
 import CompanyCTA from '../components/shared/CompanyCTA';
-import faqData from '../data//faqData.json';
+import faqData from '../data/faqData.json';
 import InfoTitle from '../components/shared/InfoTitle';
 
 export default function FAQPage() {
+  const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState('jobSeekers');
 
   const renderFAQItems = (list) =>
@@ -20,10 +22,10 @@ export default function FAQPage() {
     <>
       <Navbar />
       <InfoTitle
-          backgroundImage="https://images.pexels.com/photos/1887995/pexels-photo-1887995.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-        title="よくあるご質問"
-        description="FAQ"
-        highlightText="「サービスに関するご不明点は、まずはこちらをご確認ください。」"
+        backgroundImage="https://images.pexels.com/photos/1887995/pexels-photo-1887995.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        title={t('faqPage.infoTitle.title')}
+        description={t('faqPage.infoTitle.description')}
+        highlightText={t('faqPage.infoTitle.highlightText')}
       />
       <div className="bg-white">
         {/* Content */}
@@ -38,7 +40,7 @@ export default function FAQPage() {
                   : 'text-gray-500 hover:text-blue-500'
               }`}
             >
-              お仕事をお探しの方へ
+              {t('faqPage.tabs.jobSeekers')}
             </button>
             <button
               onClick={() => setActiveTab('companies')}
@@ -48,7 +50,7 @@ export default function FAQPage() {
                   : 'text-gray-500 hover:text-blue-500'
               }`}
             >
-              企業ご担当者様へ
+              {t('faqPage.tabs.companies')}
             </button>
           </div>
 
@@ -61,22 +63,24 @@ export default function FAQPage() {
 
           {/* CTA */}
           {activeTab === 'jobSeekers' ? (
-         <CompanyCTA
-            showTag={true}
-            tagText="お仕事をお探しの方へ / For Job Seekers"
-            title="就職・転職に関するご相談は"
-            description="専門のキャリアコンサルタントが丁寧にサポートします。お気軽にご相談ください。"
-            buttonLink="https://docs.google.com/forms/d/e/1FAIpQLSdh6uGf2hrGfCRTZUuTFYR6abVvsrEHH77TrBDEsXg2IPDSLA/viewform"
-          />) : (
-         <CompanyCTA
-            showTag={true}
-            tagText="企業様向け / For Companies" 
-            title="外国人採用・人材に関するご相談は"
-            description="貴社に最適な人材提案を行います。まずはお気軽にお問い合わせください。"
-            buttonLink="/company-contact"
+            <CompanyCTA
+              showTag={true}
+              tagText={t('faqPage.cta.jobSeekers.tagText')}
+              title={t('faqPage.cta.jobSeekers.title')}
+              description={t('faqPage.cta.jobSeekers.description')}
+              buttonLink="https://docs.google.com/forms/d/e/1FAIpQLSdh6uGf2hrGfCRTZUuTFYR6abVvsrEHH77TrBDEsXg2IPDSLA/viewform"
+              buttonText={t('faqPage.cta.jobSeekers.buttonText')}
+            />
+          ) : (
+            <CompanyCTA
+              showTag={true}
+              tagText={t('faqPage.cta.companies.tagText')}
+              title={t('faqPage.cta.companies.title')}
+              description={t('faqPage.cta.companies.description')}
+              buttonLink="/company-contact"
+              buttonText={t('faqPage.cta.companies.buttonText')}
             />
           )}
-
         </div>
       </div>
       <Footer />

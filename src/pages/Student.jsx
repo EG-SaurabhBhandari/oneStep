@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import Navbar from '../components/navbar/Navbar';
 import Footer from '../components/shared/Footer';
 import InfoTitle from '../components/shared/InfoTitle';
@@ -41,55 +42,44 @@ const AnimatedSection = ({ children, className = "", delay = 0 }) => {
 };
 
 export default function Student() {
+  const { t } = useTranslation();
+
   const strengths = [
     {
       icon: <DocumentTextIcon className="h-16 w-16 text-indigo-500" />,
-      title: '履歴書添削 & 面接対策',
-      description: '日本の就活で必須の履歴書・職務経歴書の書き方から、評価される面接の受け答えまで、専門のコンサルタントが徹底指導します。',
+      title: t('studentPage.strengths.items.0.title'),
+      description: t('studentPage.strengths.items.0.description'),
       color: 'from-indigo-500 to-purple-500'
     },
     {
       icon: <BriefcaseIcon className="h-16 w-16 text-indigo-500" />,
-      title: '留学生に理解のある企業紹介',
-      description: '外国籍社員の採用実績が豊富で、多様性を重視する優良企業を厳選してご紹介。あなたの専門性や語学力が活かせる仕事が見つかります。',
+      title: t('studentPage.strengths.items.1.title'),
+      description: t('studentPage.strengths.items.1.description'),
       color: 'from-indigo-500 to-blue-500'
     },
     {
       icon: <ChatBubbleLeftRightIcon className="h-16 w-16 text-indigo-500" />,
-      title: 'ビザ・在留資格の相談',
-      description: '就労ビザへの変更手続きなど、複雑な在留資格に関するお悩みもサポート。安心して就職活動に専念できる環境を整えます。',
+      title: t('studentPage.strengths.items.2.title'),
+      description: t('studentPage.strengths.items.2.description'),
       color: 'from-amber-500 to-purple-500'
     }
   ];
 
-  const studentSteps = [
-    "お問い合わせ",
-    "キャリアカウンセリング",
-    "企業紹介 & 面接対策",
-    "内定 & ビザサポート"
-  ];
-  
-  const studentDescriptions = [
-    "WebフォームやLINEでお気軽にご相談ください。担当スタッフがご連絡差し上げます。",
-    "経験・スキル・希望に基づき、キャリアの方向性を一緒に考えます。",
-    "外国人材に理解のある企業を厳選してご紹介し、書類応募や面接対策もサポートします。",
-    "内定後のフォローやビザの相談まで、就職活動をトータルでサポートします。"
-  ];
-  
-  
+  const studentSteps = t('studentPage.flow.steps', { returnObjects: true });
+  const studentDescriptions = t('studentPage.flow.descriptions', { returnObjects: true });
 
   const testimonials = [
     {
-      quote: "一人では分からなかった日本の就活ルールを丁寧に教えてもらい、自信を持って面接に臨めました。無事に第一志望のIT企業から内定をもらえました！",
-      name: "李さん",
-      origin: "中国出身",
+      quote: t('studentPage.testimonials.items.0.quote'),
+      name: t('studentPage.testimonials.items.0.name'),
+      origin: t('studentPage.testimonials.items.0.origin'),
       image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop&crop=faces",
       flag: "🇨🇳"
     },
     {
-      quote: "文系出身で不安でしたが、私の強みを活かせる営業職を紹介してくれました。入社後のフォローも手厚く、毎日楽しく働いています。",
-      name: "Mayaさん",
-      origin: "ネパール出身",
+      quote: t('studentPage.testimonials.items.1.quote'),
+      name: t('studentPage.testimonials.items.1.name'),
+      origin: t('studentPage.testimonials.items.1.origin'),
       image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=300&h=300&fit=crop&crop=faces",
       flag: "🇳🇵"
     }
@@ -130,9 +120,9 @@ export default function Student() {
         <div className="relative">
           <InfoTitle
             backgroundImage="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1600&h=600&fit=crop&crop=center"
-            title="留学生の就職サポート"
-            description="Career Support for International Students"
-            highlightText="日本でのキャリア、私たちと一緒に実現しませんか？"
+            title={t('studentPage.infoTitle.title')}
+            description={t('studentPage.infoTitle.description')}
+            highlightText={t('studentPage.infoTitle.highlightText')}
           />
         </div>
 
@@ -145,31 +135,31 @@ export default function Student() {
                 <div className="relative overflow-hidden rounded-2xl shadow-lg bg-white">
                   <img
                     src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="悩んでいる留学生"
+                    alt={t('studentPage.supportSection.imageAlt')}
                     className="w-full h-80 object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-br from-red-50 via-transparent to-transparent pointer-events-none"></div>
                 </div>
                 <div className="space-y-6 relative">
                   <h2 className="text-4xl font-bold text-gray-900 relative brush-stroke">
-                    日本での就職、<span className="text-brand-primary">一人で悩んでいませんか？</span>
+                    {t('studentPage.supportSection.titlePrefix')}<span className="text-brand-primary">{t('studentPage.supportSection.titleHighlight')}</span>
                   </h2>
                   <div className="space-y-4 text-gray-700 text-lg">
                     <p className="flex items-start space-x-3">
                       <span className="text-red-500 text-xl">📝</span>
-                      <span>「日本の履歴書の書き方がわからない」</span>
+                      <span>{t('studentPage.supportSection.concerns.0')}</span>
                     </p>
                     <p className="flex items-start space-x-3">
                       <span className="text-blue-500 text-xl">😰</span>
-                      <span>「面接で何を話せばいいか不安」</span>
+                      <span>{t('studentPage.supportSection.concerns.1')}</span>
                     </p>
                     <p className="flex items-start space-x-3">
                       <span className="text-green-500 text-xl">🔍</span>
-                      <span>「自分の専門を活かせる企業が見つからない」</span>
+                      <span>{t('studentPage.supportSection.concerns.2')}</span>
                     </p>
                   </div>
                   <div className="p-6 rounded-xl border-l-4 border-red-500 bg-red-100 text-gray-800 font-medium">
-                    多くの留学生が日本での就職に不安を感じています。私たちが全力でサポートします！
+                    {t('studentPage.supportSection.message')}
                   </div>
                 </div>
               </section>
@@ -179,22 +169,23 @@ export default function Student() {
             <StrengthsGrid strengths={strengths} />   
 
             <AnimatedFlowSection
-            title="ご利用の流れ"
-            steps={studentSteps}
-            descriptions={studentDescriptions}
-            colorScheme="indigo"/>
+              title={t('studentPage.flow.title')}
+              steps={studentSteps}
+              descriptions={studentDescriptions}
+              colorScheme="indigo"
+            />
                 
             {/* Testimonials */}
             <AnimatedSection delay={400}>
               <section className="space-y-12">
-                <h2 className="text-4xl font-bold text-gray-900 text-center">利用者の声</h2>
+                <h2 className="text-4xl font-bold text-gray-900 text-center">{t('studentPage.testimonials.title')}</h2>
                 <div className="grid md:grid-cols-2 gap-10">
                   {testimonials.map(({ quote, name, origin, image, flag }, idx) => (
                     <figure
                       key={idx}
                       className="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center text-center space-y-4"
                     >
-                      <blockquote className="text-lg text-gray-800 italic">“{quote}”</blockquote>
+                      <blockquote className="text-lg text-gray-800 italic">"{quote}"</blockquote>
                       <figcaption className="flex items-center space-x-4">
                         <img
                           src={image}
@@ -216,18 +207,20 @@ export default function Student() {
             {/* Job Application Form */}
             <AnimatedSection delay={600}>
               <section className="bg-purple-50 p-12 rounded-xl shadow-inner">
-                <h2 className="text-3xl font-bold mb-6 text-center text-gray-900">求人応募フォーム</h2>
+                <h2 className="text-3xl font-bold mb-6 text-center text-gray-900">{t('studentPage.jobApplicationForm.title')}</h2>
                 <JobApplicationForm />
               </section>
             </AnimatedSection>
           </div>
         </div>
-        <CompanyCTA showTag={true}
-         title="新卒の学生、第二新卒の方、または留学生の採用をご検討の企業様へ "
-         description={`まずはお気軽にご相談ください。貴社の採用ニーズに合わせた最適な人材ソリューションをご提案いたします。\n採用に関するお悩みは、One Stepにお任せください。`}
-         buttonText="ご相談・お問い合わせはこちら →"
-         buttonLink="/company-contact"
-         />
+        <CompanyCTA 
+          showTag={true}
+          tagText={t('studentPage.cta.tagText')}
+          title={t('studentPage.cta.title')}
+          description={t('studentPage.cta.description')}
+          buttonText={t('studentPage.cta.buttonText')}
+          buttonLink="/company-contact"
+        />
         <Footer />
       </div>
     </>

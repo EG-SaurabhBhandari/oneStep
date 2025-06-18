@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet';
 import Navbar from '../components/navbar/Navbar';
 import Footer from '../components/shared/Footer';
@@ -10,46 +11,45 @@ import StrengthsGrid from '../components/shared/StrengthsGrid';
 import {CheckCircleIcon,UserGroupIcon,GlobeAltIcon,PuzzlePieceIcon} from '@heroicons/react/24/solid';
 
 export default function Service() {
+  const { t } = useTranslation();
+
   const strengths = [
     {
       icon: <UserGroupIcon className="h-12 w-12 text-indigo-500" />,
-      title: '多様な人材ネットワーク',
-      description: '国籍を問わない豊富な人材ネットワークを活かし、貴社のニーズに最適な人材を迅速にご提案します。'
+      title: t('servicePage.strengths.items.0.title'),
+      description: t('servicePage.strengths.items.0.description')
     },
     {
       icon: <GlobeAltIcon className="h-12 w-12 text-indigo-500" />,
-      title: 'グローバル基準のサポート',
-      description: '日本文化やビジネスマナーに精通した外国人スタッフが多数在籍。異文化コミュニケーションも円滑です。'
+      title: t('servicePage.strengths.items.1.title'),
+      description: t('servicePage.strengths.items.1.description')
     },
     {
       icon: <PuzzlePieceIcon className="h-12 w-12 text-indigo-500" />,
-      title: '柔軟なソリューション',
-      description: '短期派遣から紹介予定派遣、専門職の確保まで、採用課題に合わせた柔軟なプランをご提供します。'
+      title: t('servicePage.strengths.items.2.title'),
+      description: t('servicePage.strengths.items.2.description')
     }
   ];
 
-  const jobTypes = ['製造業・物流業', '事務・CS', 'IT・エンジニア', '販売・接客', '通訳・翻訳', '介護・医療'];
+  const jobTypes = t('servicePage.jobTypes', { returnObjects: true });
 
   // Flow data
-  const flowSteps = ["お問い合わせ", "ヒアリング・ご提案", "ご契約・人選", "就業開始"];
-  const flowDescriptions = [
-    "Webフォームまたはお電話にて、お気軽にご相談ください。",
-    "担当者が業務内容やご要望を伺い、最適なプランをご提案します。",
-    "ご契約後、豊富な人材の中からスキル・条件に合うスタッフを選出します。",
-    "就業後も当社がスタッフをしっかりサポート。安心してご活用いただけます。"
-  ];
+  const flowSteps = t('servicePage.flow.steps', { returnObjects: true });
+  const flowDescriptions = t('servicePage.flow.descriptions', { returnObjects: true });
+
+  const challenges = t('servicePage.challenges', { returnObjects: true });
 
   return (
     <>
       <Helmet>
-        <title>人材派遣・派遣サービス | One Step株式会社</title>
+        <title>{t('servicePage.helmet.title')}</title>
         <meta
           name="description"
-          content="One Step株式会社は、多国籍な人材ネットワークを活かし、企業様に最適な人材を迅速にご提供します。外国人スタッフの活用にも強みを持ち、信頼できる人材パートナーとして日本企業をサポートします。"
+          content={t('servicePage.helmet.description')}
         />
         <meta
           name="keywords"
-          content="人材派遣, 派遣サービス, 外国人材, 人材紹介, 企業採用支援, 日本文化に理解のある外国人, グローバル人材, 短期人材, 技術人材, 派遣社員"
+          content={t('servicePage.helmet.keywords')}
         />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://your-domain.com/staffing" />
@@ -60,9 +60,9 @@ export default function Service() {
       
       <InfoTitle
         backgroundImage="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1600&h=600&fit=crop&crop=center"
-        title="人材派遣・派遣サービス"
-        description="Staffing & Dispatch Services"
-        highlightText="「人材の力で企業の成長を支える」"
+        title={t('servicePage.infoTitle.title')}
+        description={t('servicePage.infoTitle.description')}
+        highlightText={t('servicePage.infoTitle.highlightText')}
       />
 
       <div className="bg-white">
@@ -74,7 +74,7 @@ export default function Service() {
                 <div className="w-full h-80 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-500">
                   <img
                     src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="ビジネスミーティング"
+                    alt={t('servicePage.whatIsStaffing.imageAlt')}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
                 </div>
@@ -82,12 +82,10 @@ export default function Service() {
               <AnimatedSection delay={400}>
                 <div>
                   <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                    <span className="text-indigo-600">人材派遣</span>とは？
+                    <span className="text-indigo-600">{t('servicePage.whatIsStaffing.titleHighlight')}</span>{t('servicePage.whatIsStaffing.titleSuffix')}
                   </h2>
                   <p className="text-gray-700">
-                    人材派遣とは、当社（One Step）が雇用するスタッフを貴社に派遣し、貴社の指揮命令のもとで業務を行うサービスです。
-                    採用活動や労務管理のコスト・手間を削減しつつ、必要な時に必要なスキルを持つ人材を迅速に確保できます。
-                    短期間の業務から長期のプロジェクトまで、貴社のニーズに柔軟に対応いたします。
+                    {t('servicePage.whatIsStaffing.description')}
                   </p>
                 </div>
               </AnimatedSection>
@@ -99,7 +97,7 @@ export default function Service() {
         
           {/* ご利用の流れ - Using the reusable component */}
           <AnimatedFlowSection
-            title="ご利用開始までの流れ"
+            title={t('servicePage.flow.title')}
             steps={flowSteps}
             descriptions={flowDescriptions}
             colorScheme="indigo"
@@ -110,9 +108,11 @@ export default function Service() {
             <section className="grid md:grid-cols-2 gap-16 items-start">
               <AnimatedSection delay={200}>
                 <div>
-                  <h2 className="text-3xl font-bold text-gray-900 mb-6">こんな<span className="text-indigo-600">課題</span>に対応できます</h2>
+                  <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                    {t('servicePage.challengesSection.titlePrefix')}<span className="text-indigo-600">{t('servicePage.challengesSection.titleHighlight')}</span>{t('servicePage.challengesSection.titleSuffix')}
+                  </h2>
                   <ul className="space-y-4">
-                    {["急な人手不足への対応", "繁忙期のみの短期スタッフの確保", "専門スキルを持つ人材の活用", "採用・労務コストの削減", "産休・育休の代替要員確保"].map((item, index) => (
+                    {challenges.map((item, index) => (
                       <AnimatedSection key={item} delay={400 + index * 100}>
                         <li className="flex items-start hover:bg-gray-50 p-2 rounded-lg transition-colors duration-300">
                           <CheckCircleIcon className="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-1" />
@@ -125,7 +125,9 @@ export default function Service() {
               </AnimatedSection>
               <AnimatedSection delay={400}>
                 <div>
-                  <h2 className="text-3xl font-bold text-gray-900 mb-6">対応<span className="text-indigo-600">業種・職種</span>例</h2>
+                  <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                    {t('servicePage.jobTypesSection.titlePrefix')}<span className="text-indigo-600">{t('servicePage.jobTypesSection.titleHighlight')}</span>{t('servicePage.jobTypesSection.titleSuffix')}
+                  </h2>
                   <div className="flex flex-wrap gap-3">
                     {jobTypes.map((type, index) => (
                       <AnimatedSection key={type} delay={600 + index * 100}>
@@ -139,7 +141,7 @@ export default function Service() {
                     <div className="mt-8 w-full h-60 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-500">
                       <img
                         src="https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                        alt="多様な職場"
+                        alt={t('servicePage.jobTypesSection.imageAlt')}
                         className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                       />
                     </div>
@@ -151,7 +153,7 @@ export default function Service() {
 
           {/* CTA */}
           <AnimatedSection delay={200}>
-          <CompanyCTA showTag={true} />
+            <CompanyCTA showTag={true} />
           </AnimatedSection>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/navbar/Navbar';
 import Footer from '../components/shared/Footer';
@@ -10,47 +11,38 @@ import { CheckBadgeIcon, ClockIcon, DocumentTextIcon, LockClosedIcon, CheckCircl
 import CompanyCTA from '../components/shared/CompanyCTA';
 
 export default function TranslationService() {
+  const { t } = useTranslation();
+
   const strengths = [
     {
       icon: <CheckBadgeIcon className="h-12 w-12 text-blue-600" />,
-      title: '専門分野 x ネイティブ品質',
-      description: '各分野の専門知識を持つ翻訳者とネイティブスピーカーがチームを組み、正確で自然な翻訳を実現します。'
+      title: t('translationServicePage.strengths.items.0.title'),
+      description: t('translationServicePage.strengths.items.0.description')
     },
     {
       icon: <ClockIcon className="h-12 w-12 text-blue-600" />,
-      title: '迅速・柔軟な対応',
-      description: 'お急ぎの案件にも柔軟に対応。お客様のビジネススケジュールに合わせたスピーディーな納品が可能です。'
+      title: t('translationServicePage.strengths.items.1.title'),
+      description: t('translationServicePage.strengths.items.1.description')
     },
     {
       icon: <DocumentTextIcon className="h-12 w-12 text-blue-600" />,
-      title: '多様なドキュメント形式',
-      description: '契約書や技術マニュアルから、Webサイト、マーケティング資料まで、あらゆる形式のドキュメントに対応します。'
+      title: t('translationServicePage.strengths.items.2.title'),
+      description: t('translationServicePage.strengths.items.2.description')
     },
     {
       icon: <LockClosedIcon className="h-12 w-12 text-blue-600" />,
-      title: '徹底した機密保持',
-      description: 'お客様からお預かりした情報は最高レベルのセキュリティで管理。秘密保持契約（NDA）の締結も可能です。'
+      title: t('translationServicePage.strengths.items.3.title'),
+      description: t('translationServicePage.strengths.items.3.description')
     }
   ];
 
   // Data for supported fields and languages
-  const fields = ['IT・テクノロジー', '法律・契約書', '医療・医薬', '金融・IR', 'マーケティング', '技術マニュアル', 'Webサイト'];
-  const languages = ['英語', '中国語(簡体/繁体)', '韓国語', 'スペイン語', 'ドイツ語', 'フランス語', 'ベトナム語', 'その他多数'];
+  const fields = t('translationServicePage.supportedFields', { returnObjects: true });
+  const languages = t('translationServicePage.supportedLanguages', { returnObjects: true });
 
   // Translation service flow data
-  const translationSteps = [
-    "お問い合わせ・お見積り",
-    "ご発注・原稿お預かり", 
-    "翻訳・校正・チェック",
-    "納品"
-  ];
-  
-  const translationDescriptions = [
-    "Webフォームよりご連絡ください。最短当日中にお見積りを提示します。",
-    "正式にご発注後、翻訳対象のドキュメントや資料をお送りいただきます。",
-    "専門翻訳者が翻訳し、別のネイティブ担当者が品質を厳しくチェックします。",
-    "ご指定の形式で翻訳データをご納品。アフターフォローも万全です。"
-  ];
+  const translationSteps = t('translationServicePage.flow.steps', { returnObjects: true });
+  const translationDescriptions = t('translationServicePage.flow.descriptions', { returnObjects: true });
 
   return (
     <>
@@ -60,9 +52,9 @@ export default function TranslationService() {
       <div className="relative">
         <InfoTitle
           backgroundImage="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=1600&h=600&fit=crop&crop=center"
-          title="翻訳・ドキュメントサービス"
-          description="Translation & Documentation Services"
-          highlightText="言葉の壁を越え、ビジネスを世界へ。"
+          title={t('translationServicePage.infoTitle.title')}
+          description={t('translationServicePage.infoTitle.description')}
+          highlightText={t('translationServicePage.infoTitle.highlightText')}
         />
         <div className="absolute inset-0 bg-black bg-opacity-30"></div>
       </div>
@@ -77,7 +69,7 @@ export default function TranslationService() {
                 <div className="w-full h-80 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-500">
                   <img
                     src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="グローバルビジネス"
+                    alt={t('translationServicePage.problemSection.imageAlt')}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
                 </div>
@@ -85,15 +77,15 @@ export default function TranslationService() {
               <AnimatedSection delay={400}>
                 <div>
                   <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                    このような<span className="text-blue-600">翻訳の課題</span>はありませんか？
+                    {t('translationServicePage.problemSection.titlePrefix')}<span className="text-blue-600">{t('translationServicePage.problemSection.titleHighlight')}</span>{t('translationServicePage.problemSection.titleSuffix')}
                   </h2>
                   <ul className="space-y-2 text-gray-700 list-disc list-inside">
-                    <li>機械翻訳では品質が低く、ビジネスで使えない。</li>
-                    <li>専門用語が多く、正確な翻訳ができる会社が見つからない。</li>
-                    <li>多言語に展開したいが、時間もリソースもない。</li>
+                    {t('translationServicePage.problemSection.challenges', { returnObjects: true }).map((challenge, index) => (
+                      <li key={index}>{challenge}</li>
+                    ))}
                   </ul>
                   <p className="mt-4 text-gray-700">
-                    One Stepは、貴社のグローバル展開を加速させるプロフェッショナルな翻訳パートナーです。
+                    {t('translationServicePage.problemSection.solution')}
                   </p>
                 </div>
               </AnimatedSection>
@@ -102,9 +94,10 @@ export default function TranslationService() {
 
           {/* --- SECTION 2: OUR FEATURES --- */}
           <StrengthsGrid strengths={strengths} /> 
+          
           {/* --- SECTION 4: SERVICE FLOW - Using the reusable component --- */}
           <AnimatedFlowSection
-            title="ご利用の流れ"
+            title={t('translationServicePage.flow.title')}
             steps={translationSteps}
             descriptions={translationDescriptions}
             colorScheme="indigo"
@@ -115,7 +108,9 @@ export default function TranslationService() {
             <section className="grid md:grid-cols-2 gap-16 items-start">
               <AnimatedSection delay={200}>
                 <div>
-                  <h2 className="text-3xl font-bold text-gray-900 mb-6">対応<span className="text-blue-600">分野</span></h2>
+                  <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                    {t('translationServicePage.supportedFieldsSection.titlePrefix')}<span className="text-blue-600">{t('translationServicePage.supportedFieldsSection.titleHighlight')}</span>
+                  </h2>
                   <ul className="space-y-4">
                     {fields.map((item, index) => (
                       <AnimatedSection key={item} delay={400 + index * 100}>
@@ -130,7 +125,9 @@ export default function TranslationService() {
               </AnimatedSection>
               <AnimatedSection delay={400}>
                 <div>
-                  <h2 className="text-3xl font-bold text-gray-900 mb-6">対応<span className="text-blue-600">言語</span></h2>
+                  <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                    {t('translationServicePage.supportedLanguagesSection.titlePrefix')}<span className="text-blue-600">{t('translationServicePage.supportedLanguagesSection.titleHighlight')}</span>
+                  </h2>
                   <div className="flex flex-wrap gap-3">
                     {languages.map((lang, index) => (
                       <AnimatedSection key={lang} delay={600 + index * 100}>
@@ -144,7 +141,7 @@ export default function TranslationService() {
                     <div className="mt-8 w-full h-60 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-500">
                       <img
                         src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                        alt="多言語対応"
+                        alt={t('translationServicePage.supportedLanguagesSection.imageAlt')}
                         className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                       />
                     </div>
@@ -156,13 +153,14 @@ export default function TranslationService() {
         </div>
 
         {/* --- ENHANCED CTA SECTION --- */}
-        <CompanyCTA showTag={true}
-         title="無料お見積り・ご相談はこちら"
-         description={`翻訳したいドキュメントの概要や言語、納期などをお知らせください。\n専門のコーディネーターが最適なプランをご提案します。`}
-         buttonText="無料お見積りを依頼する"
-         buttonLink="/contact"
-         />
-        </div>
+        <CompanyCTA 
+          showTag={true}
+          title={t('translationServicePage.cta.title')}
+          description={t('translationServicePage.cta.description')}
+          buttonText={t('translationServicePage.cta.buttonText')}
+          buttonLink="/contact"
+        />
+      </div>
 
       <Footer />
     </>
